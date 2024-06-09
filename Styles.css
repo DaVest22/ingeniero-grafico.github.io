@@ -1,0 +1,30 @@
+html {
+    font-family: sans-serif;
+}
+
+#Encabezado {
+    
+    background-color: #191919;
+}
+
+#Inicio {
+    background-color: #EAEAEA;
+}
+
+#Biografía {
+    background-color: #191919;
+    color: white;
+}
+
+#Perfil_laboral {
+    background-color: #EAEAEA;
+}
+
+#Experiencia_laboral {
+    background-color: #EAEAEA;
+} 
+
+#Servicios-y-Portafolio-web {
+    background-color: #191919;
+    color: white;
+}

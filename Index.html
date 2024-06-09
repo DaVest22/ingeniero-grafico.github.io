@@ -2,32 +2,51 @@
 <html>
 <head>
     <title>@da.vest_Portfolio</title>
+    <link rel="Stylesheet" href="Styles.css"/>
 </head>
 <body>
-    <header> 
-        <img src="Imagenes.perfil/Portrait-portfolios.png" height="110px"/>
+    <header id="Encabezado">  
         <nav>
-            <a>BIOGRAFÍA</a>
-            <a>PERFIL LABORAL</a>
-            <a>EXPERIENCIA LABORAL / CLIENTES</a>
-            <a>PORTAFOLIO</a>
+            <img src="DA.Logo/DA-logo-W-150 px.png" height="25 px"/>
+            <a href="#Biografía">BIOGRAFÍA</a>
+            <a href="#Perfil_laboral">PERFIL LABORAL</a>
+            <a href="#Experiencia_laboral">EXPERIENCIA LABORAL / CLIENTES</a>
+            <a href="#Servicios-y-Portafolio-web">PORTAFOLIO</a>
         </nav>
     </header>
     <main>
         <section id="Inicio">
+            <div class="video-background">
+                <video autoplay loop muted playsinline>
+                    <source src="Banner.Inicio/Intro portada diseño gráfico.mp4" type="video/mp4">
+                </video>
+            </div>
             <article> 
                 <h1>David isaza<br>Analista de diseño</br></h1>
                 <p>Artista Digital con mas de 5 años de experiencia en Diseño gráfico, diseño multimedia, E-Learning, concept art, creación de personajes para el desarrollo de video juegos, cursos virtuales, Animación 3D y campañas de comunicaciones.</p> 
+                <img src="Imagenes.perfil/behance-portfolio.png"/>  
                 <h2>Servicios y Portafolio web</h2>
-                <h3>Diseño gráfico</h3><h3>Multimedia / E-Learning</h3><h3>Illustración / Arte conceptual</h3><h3>Animación 3D</h3><h3>Desarrollo</h3>
+                <ul>
+                    <li><a href="#Diseño gráfico"><h3>Diseño gráfico</h3></a></li>
+                    <li><a href="#Multimedia / E-Learning"><h3>Multimedia / E-Learning</h3></a></li>
+                    <li><a href="#Illustración / Arte conceptual"><h3>Illustración / Arte conceptual</h3></a></li>
+                    <li><a href="#Animación 3D"><h3>Animación 3D</h3></a></li>
+                    <li><a href="#Desarrollo"><h3>Desarrollo</h3></a></li>
+                </ul>
                 <hr>    
             </article>
         </section>
         <section id="Biografía">
-            <img src="Imagenes.perfil/GTA-perfil-foto.gif" height="110px"/>
-            <p>HOLA, MI NOMBRE ES<br>DAVID ESTEBAN ISAZA ORTIZ.<br>C.C: 1.020.405.389</br><br>Nací el 22 marzo 1987, Medellín, Antioquia, Colombia.</br>Contacto: da.vest@hotmail.com</br><br>Hobbies: Música, cine, videojuegos,ilustración, leer, viajar.</br></p>
-            <br>FORMACIÓN ACADÈMICA.Tìtulos:</br><br>Bachiller Académico. I.P.J.B.E Bello, Antioquia (2004).</br><br>Tecnólogo en Animacion 3D. SENA (CTMA).Medellín (2016).</br><br>ING.Sistemas/publicidad. Fundación Universitaria San José (2024).</br><br>Certificaciones:<br>Diseño y creación de personajes. SENA (CTMA). Medellín<br>Certificado en Sensiblización de servicio al cliente SENA</br>
+        <div class="columnas">
+            <div class="columna-1">
+                <img src="Imagenes.perfil/Portrait-portfolios.png" height="110px"/>
+                <p>HOLA, MI NOMBRE ES<br>DAVID ESTEBAN ISAZA ORTIZ.<br>C.C: 1.020.405.389</br><br>Nací el 22 marzo 1987, Medellín, Antioquia, Colombia.</br>Contacto: da.vest@hotmail.com</br><br>Hobbies: Música, cine, videojuegos,ilustración, leer, viajar.</br></p>
+            </div>
+            <div class="columna-2"></div>
+                <br>FORMACIÓN ACADÈMICA.Tìtulos:</br><br>Bachiller Académico. I.P.J.B.E Bello, Antioquia (2004).</br><br>Tecnólogo en Animacion 3D. SENA (CTMA).Medellín (2016).</br><br>ING.Sistemas/publicidad. Fundación Universitaria San José (2024).</br><br>Certificaciones:<br>Diseño y creación de personajes. SENA (CTMA). Medellín<br>Certificado en Sensiblización de servicio al cliente SENA</br>
+            </div>
             <hr>
+        </div>
         </section>
         <section id="Perfil_laboral">
             <h4>Perfil laboral</h4>
@@ -37,22 +56,47 @@
             <p>Artista 2D/3D:<br>Story_boards & Concept art, creación de personajes y diseño de escenarios con gráficos en 2D y 3D para el desarrollo de cursos virtuales, video juegos (escultura, modelado, iluminación y Animación 3D).</p>
             <h5>Perfil estrategico:</h5>
             <p>publicidad:<br>Análisis y desarrollo de estrategias de comunicación, para promover productos, servicios o marcas. Identificar tendencias y diseñar campañas publicitarias innovadoras que conecten con la audiencia y generen impacto.</p>
-            <p>E-Learning:<br> Diseño instruccional, gamificación, desarrollo (Scorm-html5).</p>
+            <p>E-Learning:<br> Diseño instruccional, gamificación, desarrollo (Scorm-html5-CSS).</p>
             <p>Administración plataforma Moodle:<br>(Front/end).Creación de aulas (UI/UX) Matrículas,  certificados, informes, reporte Soporte: solución de dudas y novedades. Inducción (On-boarding) a colaboradores nuevos. Entrenamiento rol profesor a expertos técnicos/cursos.</p>
             <p>Estandarización de procesos:<br>Documentación, análisis, optimización, automatización, medición y mejoramiento continuo.</p>
             <p>WordPress<br>Creación y personalización de blogs/sitios web. Sincronización herramientas Google Ads. Procesos de desarrollo y metodologías ágiles. Automatización de tareas (pluggins, widgets, actualizaciones).</p>
+                <div id="Skills">
+                    <div class="barra" style="width: 80%;">Adobe Photoshop</div> <!-- Barra del 80% -->
+                    <div class="barra" style="width: 60%;">Adobe Illustrator</div> <!-- Barra del 60% -->
+                    <div class="barra" style="width: 40%;">Adobe After Effects</div> <!-- Barra del 40% -->
+                    <div class="barra" style="width: 80%;">Adobe Premier</div> <!-- Barra del 80% -->
+                    <div class="barra" style="width: 60%;">Ilustración</div> <!-- Barra del 60% -->
+                    <div class="barra" style="width: 40%;">Autodesk Maya</div> <!-- Barra del 40% -->
+                    <div class="barra" style="width: 80%;">Pixologic Zbrush</div> <!-- Barra del 80% -->
+                    <div class="barra" style="width: 60%;">Word Press</div> <!-- Barra del 60% -->
+                    <div class="barra" style="width: 40%;">Desarrollo</div> <!-- Barra del 40% -->
+                </div>
             <hr>
         </section>
-        <section id="experiencia_laboral/clientes">
+        <section id="Experiencia_laboral">
             <h6>Experiencia laboral / Clientes</h6>
-            <p>Comfenalco Antioquia 2018-2024:<br><br>Diseño gráfico:<br>Branding, estrategia, campañas, piezas comunicaciones (E-Cards, banners, guías interactivas, edición de audio, fotografía y video, animación de personajes, Motion_graphics,  web, impresos, entre otros).<br>Artista 2D:</br> Diseño y creación de personajes, escenarios con gráficos en 2D para el desarrollo de cursos virtuales y campañas de comunicaciones.<br>E-Learning / Diseño multimedia:</br>Diseño instruccional, gamificación, Story_telling, diseño UI/UX (experiencia de usuario, interfaz, pop up, menús, entre otros).<br>Administración plataforma Moodle::</br>(Front/end).Creación de aulas (UI/UX) Matrículas, certificados, informes, reporte Soporte: solución de dudas y novedades. Inducción (On-boarding) a colaboradores nuevos. Entrenamiento rol profesor a expertos técnicos/cursos.</p> 
-            <p><br>Conocimiento Competitivo 2016-2018:</br><br>Diseño gráfico:Diseño de piezas audiovisuales (E-Cards, banners, guías interactivas, edición de audio, fotografía y video, animación de personajes, Motion_graphics, entre otros), para el desarrollo de cursos virtuales.<br>Artista 2D:<br>Diseño y creación de personajes, escenarios con gráficos en 2D para el desarrollo de cursos virtuales y campañas de comunicaciones.</p>
-            <p><br>ARQ Medios (Freelance):</br><br>Artista 3D:</br> Levantamiento de planos arquitectónicos con modelado en Software 3D (modelado, texturizado, iluminación y animación 3D).</p>
-            <p><br>Focus Group 2016:</br><br>Diseño gráfico:</br>Diseño de piezas audiovisuales (banners, edición de audio, fotografía y video, animación de personajes, Motion_graphics, diseño web, diseño interfaz, entre otros).<br>Artista 2D/3D:</br> Story_boards & Concept art, creación de personajes y diseño de escenarios con gráficos en 2D y 3D para el desarrollo de cursos virtuales, video juegos (escultura, modelado, iluminación y Animación 3D).</p>
+                <p>Comfenalco Antioquia 2018-2024:<br><br>Diseño gráfico:<br>Branding, estrategia, campañas, piezas comunicaciones (E-Cards, banners, guías interactivas, edición de audio, fotografía y video, animación de personajes, Motion_graphics,  web, impresos, entre otros).<br>Artista 2D:</br> Diseño y creación de personajes, escenarios con gráficos en 2D para el desarrollo de cursos virtuales y campañas de comunicaciones.<br>E-Learning / Diseño multimedia:</br>Diseño instruccional, gamificación, Story_telling, diseño UI/UX (experiencia de usuario, interfaz, pop up, menús, entre otros).<br>Administración plataforma Moodle::</br>(Front/end).Creación de aulas (UI/UX) Matrículas, certificados, informes, reporte Soporte: solución de dudas y novedades. Inducción (On-boarding) a colaboradores nuevos. Entrenamiento rol profesor a expertos técnicos/cursos.</p> 
+                <p><br>Conocimiento Competitivo 2016-2018:</br><br>Diseño gráfico:Diseño de piezas audiovisuales (E-Cards, banners, guías interactivas, edición de audio, fotografía y video, animación de personajes, Motion_graphics, entre otros), para el desarrollo de cursos virtuales.<br>Artista 2D:<br>Diseño y creación de personajes, escenarios con gráficos en 2D para el desarrollo de cursos virtuales y campañas de comunicaciones.</p>
+                <p><br>ARQ Medios (Freelance):</br><br>Artista 3D:</br> Levantamiento de planos arquitectónicos con modelado en Software 3D (modelado, texturizado, iluminación y animación 3D).</p>
+                <p><br>Focus Group 2016:</br><br>Artista 2D/3D:</br> Story_boards & Concept art, creación de personajes y diseño de escenarios con gráficos en 2D y 3D para el desarrollo de cursos virtuales, video juegos (escultura, modelado, iluminación y Animación 3D).<br>Diseño gráfico:</br>Diseño de piezas audiovisuales (banners, edición de audio, fotografía y video, animación de personajes, Motion_graphics, diseño web, diseño interfaz, entre otros).</p>
             <hr>
         </section>
-        <section id="Servicios y Portafolio web">
-            <h3>Diseño gráfico</h3><h3>Multimedia / E-Learning</h3><h3>Illustración / Arte conceptual</h3><h3>Animación 3D</h3><h3>Desarrollo</h3>
+        <section id="Servicios-y-Portafolio-web">
+            <article id="Diseño gráfico">
+                <h3>Diseño gráfico</h3>
+            </article>
+            <article id="Multimedia / E-Learning">
+                <h3>Multimedia / E-Learning</h3>
+            </article>
+            <article id="Illustración / Arte conceptual">
+                <h3>Illustración / Arte conceptual</h3>
+            </article>
+            <article id="Animación 3D">
+                <h3>Animación 3D</h3>
+            </article>
+            <article id="Desarrollo">
+                <h3>Desarrollo</h3>
+            </article>
         </section>
         <form>
             <label for="Nombre">Nombre:</label>
