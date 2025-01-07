@@ -1,104 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>@da.vest_Portfolio</title>
+    <title>@da.pixel</title>
     <link rel="Stylesheet" href="Styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="Encabezado">  
-        <nav>
-            <img src="DA.Logo/DA-logo-W-150 px.png" height="25 px"/>
-            <a href="#Biografía">BIOGRAFÍA</a>
-            <a href="#Perfil_laboral">PERFIL LABORAL</a>
-            <a href="#Experiencia_laboral">EXPERIENCIA LABORAL / CLIENTES</a>
-            <a href="#Servicios-y-Portafolio-web">PORTAFOLIO</a>
+        <nav class="nav-bar">
+            <img class= "DA-Logo" src="DA.Logo/ingeniero-grafico.logo.png" height="50 px"/>
+            <!-- <a href="#Servicios">Servicios</a> -->
+            <a href="#Portafolio">Portafolio</a>
+            <a href="#Sobre_mí">Sobre mí</a>
+            <a href="#Contacto">Contacto</a>
         </nav>
     </header>
-    <main>
-        <section id="Inicio">
-            <div class="video-background">
-                <video autoplay loop muted playsinline>
-                    <source src="Banner.Inicio/Intro portada diseño gráfico.mp4" type="video/mp4">
-                </video>
-            </div>
-            <article> 
-                <h1>David isaza<br>Analista de diseño</br></h1>
-                <p>Artista Digital con mas de 5 años de experiencia en Diseño gráfico, diseño multimedia, E-Learning, concept art, creación de personajes para el desarrollo de video juegos, cursos virtuales, Animación 3D y campañas de comunicaciones.</p> 
-                <img src="Imagenes.perfil/behance-portfolio.png"/>  
-                <h2>Servicios y Portafolio web</h2>
-                <ul>
-                    <li><a href="#Diseño gráfico"><h3>Diseño gráfico</h3></a></li>
-                    <li><a href="#Multimedia / E-Learning"><h3>Multimedia / E-Learning</h3></a></li>
-                    <li><a href="#Illustración / Arte conceptual"><h3>Illustración / Arte conceptual</h3></a></li>
-                    <li><a href="#Animación 3D"><h3>Animación 3D</h3></a></li>
-                    <li><a href="#Desarrollo"><h3>Desarrollo</h3></a></li>
-                </ul>
-                <hr>    
-            </article>
+    <div class="pixel-naranja-1"></div>
+    <div class="pixel-naranja-2"></div> 
+    <div class="pixel-azul-1"></div>
+    <div class="pixel-azul-2"></div>
+    <main class="container">
+        <div class="video-inicio">
+            
+        </div>
+        <h1>Ingeniero gráfico</h1>
+        <section class="servicios" id="Inicio">
+                
+                <!--<video autoplay loop muted playsinline>
+                    <source src="Video de fondo" type="video/mp4">
+                </video>-->
+                
+                <div class="botones-servicios">
+                    <img src="Botones-servicios/Design.boton.png" width="100%" alt="boton-para-ingresar-a-la-seccion-de-servicos-de diseño." >
+                    <a class="Diseno-grafico" href="#Diseño gráfico"><h2>Diseño gráfico</h2></a>
+                </div>
+                <div class="botones-servicios">
+                    <img src="Botones-servicios/Ilustartion.boton.png" width="100%" alt="boton-para-ingresar-a-la-seccion-de-servicos-de diseño." >
+                    <a class="Arte-2D/3D" href="#Multimedia / E-Learning"><h2>Arte 2D/3D</h2></a>
+                </div>
+                <div class="botones-servicios">
+                    <img src="Botones-servicios/e-learnig.boton.png" width="100%" alt="boton-para-ingresar-a-la-seccion-de-servicos-de diseño." >
+                    <a class="Multimedia" href="#Arte 2D/3D"><h2>Multimedia</h2></a>
+                </div>
+                <div class="botones-servicios">
+                    <img src="Botones-servicios/dev.boton.png" width="100%" alt="boton-para-ingresar-a-la-seccion-de-servicos-de diseño." >
+                    <a class="Desarrollo-web" href="#Desarrollo web"><h2>Desarrollo web</h2></a>
+                </div>
         </section>
-        <section id="Biografía">
-        <div class="columnas">
-            <div class="columna-1">
-                <img src="Imagenes.perfil/Portrait-portfolios.png" height="110px"/>
-                <p>HOLA, MI NOMBRE ES<br>DAVID ESTEBAN ISAZA ORTIZ.<br>C.C: 1.020.405.389</br><br>Nací el 22 marzo 1987, Medellín, Antioquia, Colombia.</br>Contacto: da.vest@hotmail.com</br><br>Hobbies: Música, cine, videojuegos,ilustración, leer, viajar.</br></p>
-            </div>
-            <div class="columna-2"></div>
-                <br>FORMACIÓN ACADÈMICA.Tìtulos:</br><br>Bachiller Académico. I.P.J.B.E Bello, Antioquia (2004).</br><br>Tecnólogo en Animacion 3D. SENA (CTMA).Medellín (2016).</br><br>ING.Sistemas/publicidad. Fundación Universitaria San José (2024).</br><br>Certificaciones:<br>Diseño y creación de personajes. SENA (CTMA). Medellín<br>Certificado en Sensiblización de servicio al cliente SENA</br>
-            </div>
-            <hr>
+        <article class="Perfil-laboral">
+            <div class="foto-perfil">
+                <img class="Imagen-perfil" src="Imagenes.perfil/foto_perfil_laboral.png" width="150px"/>  
+                <p>David isaza</p>
+            </div> 
+            <div class="trayectoria">
+                <h3>Analista de diseño</h3>
+                <p>Artista Digital con mas de 7 años de experiencia en Diseño 2D/3D, ilustración y multimedia, para video juegos, cursos virtuales, campañas de comunicaciones y desarrollo web.</p>  
+                </div>
+        </article>
+        <section class="Clientes">
+            <h4>Experiencia laboral / Clientes</h4>
+            <div class="logos-clientes">
+            <details>
+                <summary>Comfenalco Antioquia</summary>
+                <p><br>2018-2024<br><br>Diseño gráfico:<br>Branding, estrategia, campañas, piezas comunicaciones (E-Cards, banners, guías interactivas, edición de audio, fotografía y video, animación de personajes, Motion_graphics,  web, impresos, entre otros).<br><br>Artista 2D:</br> Diseño y creación de personajes, escenarios con gráficos en 2D para el desarrollo de cursos virtuales y campañas de comunicaciones.<br><br>E-Learning / Diseño multimedia:</br>Diseño instruccional, gamificación, Story_telling, diseño UI/UX (experiencia de usuario, interfaz, pop up, menús, entre otros).<br><br>Administración plataforma Moodle:</br>(Front/end).Creación de aulas (UI/UX) Matrículas, certificados, informes, reportes, Soporte (solución de dudas y novedades). Inducción (On-boarding) a colaboradores nuevos. Entrenamiento rol profesor a expertos técnicos/cursos.</p>
+            </details>
+            
+            <details>  
+                <summary>Conocimiento-Competitivo</summary>
+                    <p><br>2016-2018:</br><br>Diseño gráfico:<br>Diseño de piezas audiovisuales (E-Cards, banners, guías interactivas, edición de audio, fotografía y video, animación de personajes, Motion_graphics, entre otros), para el desarrollo de cursos virtuales.<br><br>Artista 2D:<br>Diseño y creación de personajes, escenarios con gráficos en 2D para el desarrollo de cursos virtuales y campañas de comunicaciones.</p>
+            </details> 
+
+            <details>
+                <summary>ARQ-Medios</summary> 
+                <p><br>ARQ Medios (Freelance):</br><br>Artista 3D:</br> Levantamiento de planos arquitectónicos con modelado en Software 3D (modelado, texturizado, iluminación y animación 3D).</p>
+            </details>
+
+            <details>
+                <summary>Focus-Group</summary>
+                <p><br>2016:</br><br>Artista 2D/3D:</br> Story_boards & Concept art, creación de personajes y diseño de escenarios con gráficos en 2D y 3D para el desarrollo de cursos virtuales, video juegos (escultura, modelado, iluminación y Animación 3D).<br><br>Diseño gráfico:</br>Diseño de piezas audiovisuales (banners, edición de audio, fotografía y video, animación de personajes, Motion_graphics, diseño web, diseño interfaz, entre otros).</p>
+            </details>
+
+            <details >
+                <summary>Mejor-Opcion</summary>
+                <p><br>Mejor Opción:</br> Dirección de arte:</br> Comunicar de manera original, eficaz y creativa, sintetizando pensamientos y palabras en conceptos fáciles de entender. Visualización de propuestas a través de bocetos de storyboard para presentar el proyecto, racionalizando el enfoque y encontrando un argumento eficaz; optimización de recursos, uso del conocimiento técnico, habilidades y herramientas de un equipo de profesionales (gráficos, fotógrafos, ilustradores, productores audiovisuales), participando en todas las fases desde del proceso (preproducción, producción, post producción y marketing digital).</p>
+            </details>
+            <details>
+                <summary>Mejor-Opcion</summary>
+                <p><br>Mejor Opción:</br> Dirección de arte:</br> Comunicar de manera original, eficaz y creativa, sintetizando pensamientos y palabras en conceptos fáciles de entender. Visualización de propuestas a través de bocetos de storyboard para presentar el proyecto, racionalizando el enfoque y encontrando un argumento eficaz; optimización de recursos, uso del conocimiento técnico, habilidades y herramientas de un equipo de profesionales (gráficos, fotógrafos, ilustradores, productores audiovisuales), participando en todas las fases desde del proceso (preproducción, producción, post producción y marketing digital).</p>
+            </details>
         </div>
         </section>
-        <section id="Perfil_laboral">
-            <h4>Perfil laboral</h4>
-            <h5>Perfil creativo:</h5>
-            <p>Diseño gráfico:<br>Branding, estrategia, campañas, piezas comunicaciones (E-Cards, banners, guías interactivas, edición de audio, fotografía y video, animación de personajes, Motion_graphics,  web, impresos, entre otros).</p>
-            <p>E-Learning / Diseño multimedia:<br>Story_telling, diseño UI/UX (experiencia de usuario, interfaz, pop up, menús).</p> 
-            <p>Artista 2D/3D:<br>Story_boards & Concept art, creación de personajes y diseño de escenarios con gráficos en 2D y 3D para el desarrollo de cursos virtuales, video juegos (escultura, modelado, iluminación y Animación 3D).</p>
-            <h5>Perfil estrategico:</h5>
-            <p>publicidad:<br>Análisis y desarrollo de estrategias de comunicación, para promover productos, servicios o marcas. Identificar tendencias y diseñar campañas publicitarias innovadoras que conecten con la audiencia y generen impacto.</p>
-            <p>E-Learning:<br> Diseño instruccional, gamificación, desarrollo (Scorm-html5-CSS).</p>
-            <p>Administración plataforma Moodle:<br>(Front/end).Creación de aulas (UI/UX) Matrículas,  certificados, informes, reporte Soporte: solución de dudas y novedades. Inducción (On-boarding) a colaboradores nuevos. Entrenamiento rol profesor a expertos técnicos/cursos.</p>
-            <p>Estandarización de procesos:<br>Documentación, análisis, optimización, automatización, medición y mejoramiento continuo.</p>
-            <p>WordPress<br>Creación y personalización de blogs/sitios web. Sincronización herramientas Google Ads. Procesos de desarrollo y metodologías ágiles. Automatización de tareas (pluggins, widgets, actualizaciones).</p>
-                <div id="Skills">
-                    <div class="barra" style="width: 80%;">Adobe Photoshop</div> <!-- Barra del 80% -->
-                    <div class="barra" style="width: 60%;">Adobe Illustrator</div> <!-- Barra del 60% -->
-                    <div class="barra" style="width: 40%;">Adobe After Effects</div> <!-- Barra del 40% -->
-                    <div class="barra" style="width: 80%;">Adobe Premier</div> <!-- Barra del 80% -->
-                    <div class="barra" style="width: 60%;">Ilustración</div> <!-- Barra del 60% -->
-                    <div class="barra" style="width: 40%;">Autodesk Maya</div> <!-- Barra del 40% -->
-                    <div class="barra" style="width: 80%;">Pixologic Zbrush</div> <!-- Barra del 80% -->
-                    <div class="barra" style="width: 60%;">Word Press</div> <!-- Barra del 60% -->
-                    <div class="barra" style="width: 40%;">Desarrollo</div> <!-- Barra del 40% -->
-                </div>
-            <hr>
-        </section>
-        <section id="Experiencia_laboral">
-            <h6>Experiencia laboral / Clientes</h6>
-                <p>Comfenalco Antioquia 2018-2024:<br><br>Diseño gráfico:<br>Branding, estrategia, campañas, piezas comunicaciones (E-Cards, banners, guías interactivas, edición de audio, fotografía y video, animación de personajes, Motion_graphics,  web, impresos, entre otros).<br>Artista 2D:</br> Diseño y creación de personajes, escenarios con gráficos en 2D para el desarrollo de cursos virtuales y campañas de comunicaciones.<br>E-Learning / Diseño multimedia:</br>Diseño instruccional, gamificación, Story_telling, diseño UI/UX (experiencia de usuario, interfaz, pop up, menús, entre otros).<br>Administración plataforma Moodle::</br>(Front/end).Creación de aulas (UI/UX) Matrículas, certificados, informes, reporte Soporte: solución de dudas y novedades. Inducción (On-boarding) a colaboradores nuevos. Entrenamiento rol profesor a expertos técnicos/cursos.</p> 
-                <p><br>Conocimiento Competitivo 2016-2018:</br><br>Diseño gráfico:Diseño de piezas audiovisuales (E-Cards, banners, guías interactivas, edición de audio, fotografía y video, animación de personajes, Motion_graphics, entre otros), para el desarrollo de cursos virtuales.<br>Artista 2D:<br>Diseño y creación de personajes, escenarios con gráficos en 2D para el desarrollo de cursos virtuales y campañas de comunicaciones.</p>
-                <p><br>ARQ Medios (Freelance):</br><br>Artista 3D:</br> Levantamiento de planos arquitectónicos con modelado en Software 3D (modelado, texturizado, iluminación y animación 3D).</p>
-                <p><br>Focus Group 2016:</br><br>Artista 2D/3D:</br> Story_boards & Concept art, creación de personajes y diseño de escenarios con gráficos en 2D y 3D para el desarrollo de cursos virtuales, video juegos (escultura, modelado, iluminación y Animación 3D).<br>Diseño gráfico:</br>Diseño de piezas audiovisuales (banners, edición de audio, fotografía y video, animación de personajes, Motion_graphics, diseño web, diseño interfaz, entre otros).</p>
-            <hr>
-        </section>
-        <section id="Servicios-y-Portafolio-web">
-            <article id="Diseño gráfico">
-                <h3>Diseño gráfico</h3>
-            </article>
-            <article id="Multimedia / E-Learning">
-                <h3>Multimedia / E-Learning</h3>
-            </article>
-            <article id="Illustración / Arte conceptual">
-                <h3>Illustración / Arte conceptual</h3>
-            </article>
-            <article id="Animación 3D">
-                <h3>Animación 3D</h3>
-            </article>
-            <article id="Desarrollo">
-                <h3>Desarrollo</h3>
-            </article>
-        </section>
-        <form>
+        <!-- <form>
             <label for="Nombre">Nombre:</label>
             <input id="Nombre" name="Nombre" placeholder="Escribe tu nombre"/><br>
             <label for="Apellido">Apellido:</label>
@@ -108,7 +102,76 @@
             <label for="Comentario">Comentario</label><br>
             <textarea name="Comentario" id="Comentario" placeholder="Descripción de tu solicitud" cols="45" rows="10"></textarea><br>
             <button type="submit">Enviar</button>
-        </form>
+        </form> -->
+        
+    <!-- <section id="Biografía">
+        <div class="columnas">
+            <div class="columna-1">
+                <img src="Imagenes.perfil/Portrait-portfolios.png" height="110px"/>
+                <p>HOLA, MI NOMBRE ES<br>DAVID ESTEBAN ISAZA ORTIZ.<br>C.C: 1.020.405.389</br><br>Nací el 22 marzo 1987, Medellín, Antioquia, Colombia.</br>Contacto: da.vest@hotmail.com</br><br>Hobbies: Música, cine, videojuegos,ilustración, leer, viajar.</br></p>
+            </div>
+            <div class="columna-2"></div>
+                <br>FORMACIÓN ACADÈMICA.Tìtulos:</br><br>Bachiller Académico. I.P.J.B.E Bello, Antioquia (2004).</br><br>Tecnólogo en Animacion 3D. SENA (CTMA).Medellín (2016).</br><br>ING.Sistemas/publicidad. Fundación Universitaria San José (2024).</br><br>Certificaciones:<br>Diseño y creación de personajes. SENA (CTMA). Medellín<br>Certificado en Sensiblización de servicio al cliente SENA</br>
+            </div>
+            <hr>
+    <section id="Perfil_laboral">
+        <h4>Perfil laboral</h4>
+        <h5>Perfil creativo:</h5>
+        <p>Diseño gráfico:<br>Branding, estrategia, campañas, piezas comunicaciones (E-Cards, banners, guías interactivas, edición de audio, fotografía y video, animación de personajes, Motion_graphics,  web, impresos, entre otros).</p>
+        <p>E-Learning / Diseño multimedia:<br>Story_telling, diseño UI/UX (experiencia de usuario, interfaz, pop up, menús).</p> 
+        <p>Artista 2D/3D:<br>Story_boards & Concept art, creación de personajes y diseño de escenarios con gráficos en 2D y 3D para el desarrollo de cursos virtuales, video juegos (escultura, modelado, iluminación y Animación 3D).</p>
+        <h6>Perfil estrategico:</h6>
+        <p>publicidad:<br>Análisis y desarrollo de estrategias de comunicación, para promover productos, servicios o marcas. Identificar tendencias y diseñar campañas publicitarias innovadoras que conecten con la audiencia y generen impacto.</p>
+        <p>E-Learning:<br> Diseño instruccional, gamificación, desarrollo (Scorm-html5-CSS).</p>
+        <p>Administración plataforma Moodle:<br>(Front/end).Creación de aulas (UI/UX) Matrículas,  certificados, informes, reporte Soporte: solución de dudas y novedades. Inducción (On-boarding) a colaboradores nuevos. Entrenamiento rol profesor a expertos técnicos/cursos.</p>
+        <p>Estandarización de procesos:<br>Documentación, análisis, optimización, automatización, medición y mejoramiento continuo.</p>
+        <p>WordPress<br>Creación y personalización de blogs/sitios web. Sincronización herramientas Google Ads. Procesos de desarrollo y metodologías ágiles. Automatización de tareas (pluggins, widgets, actualizaciones).</p>
+            <div id="Skills">
+                <div class="barra" style="width: 80%;">Adobe Photoshop</div> 
+                <div class="barra" style="width: 60%;">Adobe Illustrator</div> 
+                <div class="barra" style="width: 40%;">Adobe After Effects</div> 
+                <div class="barra" style="width: 80%;">Adobe Premier</div> 
+                <div class="barra" style="width: 60%;">Ilustración</div> 
+                <div class="barra" style="width: 40%;">Autodesk Maya</div> 
+                <div class="barra" style="width: 80%;">Pixologic Zbrush</div> 
+                <div class="barra" style="width: 60%;">Word Press</div> 
+                <div class="barra" style="width: 40%;">Desarrollo</div> 
+            </div>
+        </section>-->
+        <!-- <hr> 
+    <section id="Servicios-y-Portafolio-web">
+        <article id="Diseño gráfico">
+            <h3>Diseño gráfico</h3>
+        </article>
+        <article id="Multimedia / E-Learning">
+            <h3>Multimedia / E-Learning</h3>
+        </article>
+        <article id="Illustración / Arte conceptual">
+            <h3>Illustración / Arte conceptual</h3>
+        </article>
+        <article id="Animación 3D">
+            <h3>Animación 3D</h3>
+        </article>
+        <article id="Desarrollo">
+            <h3>Desarrollo</h3>
+        </article>
+    </section> -->
     </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#Encabezado">Ir al inicio</a>
+            <a href="mailto:da.vest@hotmail.com"><img src="regular-iconos/envelope.svg" width="15px"Enviar E-mail>da.vest@hotmail.com</a>
+            <a href="tel:+573134574747"><img src="Social.Media.iconos/whatsapp.svg" width="15px"llamada>(+57)312 463 69 44</a>
+            <a href="whatsapp://send?text=+(604000000) Hola ingreso con código 001"> <img src="Imagenes.web/Whatsapp.png" width="15px" WhatsApp> Asesor </a>          
+        </div>
+        <div class="footer-social-media">   
+            <a href="https://www.instagram.com/d.a_pixel/"><img src="Social.Media.iconos/instagram.svg" width="15px">Instagram</a>
+            <a href="https://www.facebook.com/isaza.ilustrador/photos"><img src="Social.Media.iconos/facebook.svg" width="15px">Facebook</a>
+            <a href="https://www.linkedin.com/in/david-isaza-49b7a1125/"><img src="Social.Media.iconos/linkedin.svg" width="15px">Linkedin</a>
+            <a href="https://www.behance.net/David-Isaza"><img src="Social.Media.iconos/behance.svg" width="15px"> Behance</a>
+            <a href="https://www.artstation.com/davidisaza"><img src="Social.Media.iconos/artstation.svg" width="15px">ArtStation</a>
+        </div>
+        <p>&copy; 2025 da-pixel. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
