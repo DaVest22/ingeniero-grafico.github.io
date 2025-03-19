@@ -292,7 +292,7 @@ body{
     display: block; 
     position: absolute;
     background-color: rgb(230,230, 230);
-    width: 200px;
+    width: 170px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 13px;
@@ -549,6 +549,16 @@ footer p{
 
     #menu:checked ~ .nav-bar {
         display: initial;
+    }
+
+    .menu-container .nav-bar ul li:hover .submenu {
+        display: block; 
+        position: absolute;
+        padding-right: 150px;
+        background-color: rgb(0, 0, 0);
+        width: 170px;
+        z-index: 1;
+        border-radius: 13px;
     }
 
     .servicios {
