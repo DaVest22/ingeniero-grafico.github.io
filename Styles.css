@@ -240,8 +240,8 @@ body{
     align-items: center;
     width: 100vw;
     height: 100%;  
-    margin: 0 auto;
-    padding: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 /*Menu-nav-1*/
@@ -424,13 +424,12 @@ h1{
 }
 
 .pagina-servicios {
-    display: grid;
-    grid-template-columns: 4fr;
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding-top: 20px;
-    max-width: 100vw;
+    padding: 0;
+    width: 100vw;
+    height: auto;
 }
 
 .categoria-servicios {
@@ -442,7 +441,7 @@ h1{
     text-align: center;
     margin: 0;
     padding: 0;
-    max-height: 100vw;
+    width: 100vw;
     /*background-color: #fe790f;*/
 }
 
@@ -496,15 +495,15 @@ h1{
 }
 
 .tarjetas-servicios {
-    display: grid;
-    flex-direction: column;
+    display: block;
     text-align: left;
     justify-content: center;
     justify-items: center;
-    max: width 1280px;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
     height: auto;
     margin: 0;
-    padding: 0;
 }
 
 
@@ -524,19 +523,25 @@ h1{
 }
 
 .tarjetas-servicios ul {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            100px,
+            1fr
+        )
+    );
+    align-items: center;
+    align-content: center;
     justify-content: center;
     align-items: center;
-    justify-items: center;
-    align-content: center;
+    text-align: left;
     margin: 0;
-    padding: 40px;
-    gap: 20px;
-    max-width: 1280px;
+    padding: 60px;
+    gap: 26px;
+    width: 80%;
+    height: auto;
 }
-
-
 
 .tarjetas-servicios ul li {
     display: flex;
@@ -545,9 +550,9 @@ h1{
     justify-items: center;
     align-items: center;
     align-content: center;
-    width: 200px;
+    width: 100%;
     height: auto;
-    padding: 0;
+    padding: 10px;
     margin: 0;
 }
 
@@ -782,6 +787,48 @@ footer p{
         align-content: center;
     }
 
+    .pagina-servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0px;
+        width: 100vw;
+    }
+
+    .categoria-servicios {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    max-height: 100vw;
+    /*background-color: #fe790f;*/
+    }
+
+    .tarjetas-servicios ul {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(
+                300px,
+                1fr
+            )
+        );
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        margin: 0;
+        padding: 0px;
+        gap: 16px;
+    }
+
     
 }
 
@@ -820,6 +867,51 @@ footer p{
         border-radius: 6px;
         box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
         cursor: pointer;   
+    }
+
+    .pagina-servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-bottom: 0px;
+        width: 100vw;
+        height: auto;
+    }
+
+    .categoria-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100vw;
+    /*background-color: #fe790f;*/
+    }
+
+    .tarjetas-servicios ul {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(
+                200px,
+                1fr
+            )
+        );
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        margin: 0;
+        padding: 0px;
+        gap: 16px;
     }
 }
 
@@ -861,6 +953,74 @@ footer p{
 
     .foto-perfil {
         padding-left: 55px;
+    }
+
+    .pagina-servicios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: auto;
+    }
+    
+    .categoria-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    /*background-color: #fe790f;*/
+    }
+
+    .tarjetas-servicios {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tarjetas-servicios ul {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(
+                170px,
+                1fr
+            )
+        );
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        height: auto;
+        margin: 0;
+        padding: 0px;
+        gap: 16px;
+    }
+
+    #servicios-multimedia {
+        padding-top: 80px;
+        margin-bottom: 70px;
+    }
+
+    #servicios-web-dev {
+        margin-bottom: 40px;
     }
 
     footer {
@@ -925,7 +1085,20 @@ footer p{
         padding-left: 20px;
     }
 
-   
+    #servicios-diseno {
+        padding-top: 90px;
+        margin-bottom: 110px;
+    }
+
+    #servicios-multimedia {
+        padding-top: 175px;
+        margin-bottom: 125px;
+    }
+
+    #servicios-web-dev {
+        padding-top: 90px;
+        margin-bottom: 140px;
+    }
 
     footer {
         display: block;
@@ -1003,6 +1176,30 @@ footer p{
 
     .foto-perfil {
         padding-left: 20px;
+    }
+
+    .pagina-servicios {
+        
+    }
+
+    #servicios-2D-3D {
+        padding-top: 480px;
+        margin-bottom: 510px;
+    }
+
+    #servicios-diseno {
+        padding-top: 535px;
+        margin-bottom: 560px;
+    }
+
+    #servicios-multimedia {
+        padding-top: 585px;
+        margin-bottom: 615px;
+    }
+
+    #servicios-web-dev {
+        padding-top: 410px;
+        margin-bottom: 470px;
     }
 
 
