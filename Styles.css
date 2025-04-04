@@ -424,6 +424,8 @@ h1{
 }
 
 .pagina-servicios {
+    display: block;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -433,7 +435,8 @@ h1{
 }
 
 .categoria-servicios {
-    display: block;
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -442,6 +445,7 @@ h1{
     margin: 0;
     padding: 0;
     width: 100vw;
+    max-width: auto;
     /*background-color: #fe790f;*/
 }
 
@@ -527,7 +531,7 @@ h1{
     grid-template-columns: repeat(
         auto-fit,
         minmax(
-            100px,
+            220px,
             1fr
         )
     );
@@ -539,7 +543,7 @@ h1{
     margin: 0;
     padding: 60px;
     gap: 26px;
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -550,6 +554,7 @@ h1{
     justify-items: center;
     align-items: center;
     align-content: center;
+    min-width: 200px;
     width: 100%;
     height: auto;
     padding: 10px;
@@ -786,55 +791,56 @@ footer p{
         align-items: center;
         align-content: center;
     }
-
-    .pagina-servicios {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0px;
-        width: 100vw;
-    }
-
-    .categoria-servicios {
-    display: grid;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    max-height: 100vw;
-    /*background-color: #fe790f;*/
-    }
-
-    .tarjetas-servicios ul {
-        display: grid;
-        grid-template-columns: repeat(
-            auto-fit,
-            minmax(
-                300px,
-                1fr
-            )
-        );
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        width: 80vw;
-        margin: 0;
-        padding: 0px;
-        gap: 16px;
-    }
-
     
 }
 
-  
-
 @media (max-width:777px) {
+
+    .menu-container label {
+        display: initial;
+        padding-right: 10px;
+    }
+
+    .menu-container .nav-bar {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        right: 0;
+        padding-right: 20px;
+        display: none;
+    }
+
+    .menu-container .nav-bar ul li {
+        width:100%;
+        display: flex;
+        justify-content: right;
+        padding-bottom: 7px;
+    }
+
+    .menu-container .nav-bar ul li a {
+        font-size: 17px;
+        font-weight: bold;
+        padding: 7px 20px;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        width: 20%;
+        border-radius: 5px;
+    }
+
+    #menu:checked ~ .nav-bar {
+        display: initial;
+    }
+
+    .menu-container .nav-bar ul li:hover .submenu {
+        display: block; 
+        position: absolute;
+        padding-right: 120px;
+        background-color: rgb(0, 0, 0);
+        width: 170px;
+        z-index: 1;
+        border-radius: 7px;
+    }
 
     .servicios {
         display: grid;
@@ -869,160 +875,6 @@ footer p{
         cursor: pointer;   
     }
 
-    .pagina-servicios {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding-bottom: 0px;
-        width: 100vw;
-        height: auto;
-    }
-
-    .categoria-servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: 100vw;
-    /*background-color: #fe790f;*/
-    }
-
-    .tarjetas-servicios ul {
-        display: grid;
-        grid-template-columns: repeat(
-            auto-fit,
-            minmax(
-                200px,
-                1fr
-            )
-        );
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        width: 80vw;
-        margin: 0;
-        padding: 0px;
-        gap: 16px;
-    }
-}
-
-@media (max-width:659px) {
-
-    .container{
-        width: 100%;
-        justify-content: center; 
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .servicios {
-        display: grid;
-        grid-template-columns: 1fr 1fr;  
-        grid-column: 80px 80px;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .botones-servicios img {
-        width: 120px;
-        height: 120px;
-        border-radius: 6px;
-        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
-        cursor: pointer;
-        
-    }
-    
-    .Perfil-laboral {
-        display: grid;
-        grid-template-columns: 1fr 1fr;  
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .foto-perfil {
-        padding-left: 55px;
-    }
-
-    .pagina-servicios {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: auto;
-    }
-    
-    .categoria-servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: auto;
-    /*background-color: #fe790f;*/
-    }
-
-    .tarjetas-servicios {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        width: 100vw;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    }
-
-    .tarjetas-servicios ul {
-        display: grid;
-        grid-template-columns: repeat(
-            auto-fit,
-            minmax(
-                170px,
-                1fr
-            )
-        );
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        width: 80vw;
-        height: auto;
-        margin: 0;
-        padding: 0px;
-        gap: 16px;
-    }
-
-    #servicios-multimedia {
-        padding-top: 80px;
-        margin-bottom: 70px;
-    }
-
-    #servicios-web-dev {
-        margin-bottom: 40px;
-    }
-
     footer {
         display: block;
         width: 100%;
@@ -1052,92 +904,56 @@ footer p{
         gap: 10px;
         padding-top: 20px;
     }
+
+
 }
 
-@media(max-width:586px) {
+@media(max-width:577px) {
 
-    .container{
-        width: 100%;
-        justify-content: center; 
-        align-content: center;
-        justify-items: center;
-        align-items: center;
+    .menu-container label {
+        display: initial;
+        padding-right: 10px;
     }
 
-    .botones-servicios {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        height: auto;
-        margin: 0;
-        padding-bottom: 20px;
+    .menu-container .nav-bar {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        right: 0;
+        padding-right: 20px;
+        display: none;
     }
 
-    .Perfil-laboral {
-        display: block;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
+    .menu-container .nav-bar ul li {
+        width:100%;
+        display: flex;
+        justify-content: right;
+        padding-bottom: 7px;
     }
 
-    .foto-perfil {
-        padding-left: 20px;
+    .menu-container .nav-bar ul li a {
+        font-size: 17px;
+        font-weight: bold;
+        padding: 7px 20px;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        width: 20%;
+        border-radius: 5px;
     }
 
-    #servicios-diseno {
-        padding-top: 90px;
-        margin-bottom: 110px;
+    #menu:checked ~ .nav-bar {
+        display: initial;
     }
 
-    #servicios-multimedia {
-        padding-top: 175px;
-        margin-bottom: 125px;
-    }
-
-    #servicios-web-dev {
-        padding-top: 90px;
-        margin-bottom: 140px;
-    }
-
-    footer {
-        display: block;
-        width: 100%;
-        margin: 0;
-        height: auto;
-        justify-content: center; 
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .footer-links {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .footer-social-media {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-evenly; 
-        align-content: center;
-        gap: 10px;
-        padding-top: 20px;
-    }
-}
-
-@media(max-width:390px) {
-    .container{
-        width: 100%;
-        justify-content: center; 
-        align-content: center;
-        justify-items: center;
-        align-items: center;
+    .menu-container .nav-bar ul li:hover .submenu {
+        display: block; 
+        position: absolute;
+        padding-right: 120px;
+        background-color: rgb(0, 0, 0);
+        width: 170px;
+        z-index: 1;
+        border-radius: 7px;
     }
 
     .servicios {
@@ -1178,30 +994,122 @@ footer p{
         padding-left: 20px;
     }
 
-    .pagina-servicios {
-        
+    footer {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: auto;
+        justify-content: center; 
+        align-content: center;
+        justify-items: center;
+        align-items: center;
     }
 
-    #servicios-2D-3D {
-        padding-top: 480px;
-        margin-bottom: 510px;
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        gap: 10px;
     }
 
-    #servicios-diseno {
-        padding-top: 535px;
-        margin-bottom: 560px;
+    .footer-social-media {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly; 
+        align-content: center;
+        gap: 10px;
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:390px) {
+
+    .menu-container label {
+        display: initial;
+        padding-right: 10px;
     }
 
-    #servicios-multimedia {
-        padding-top: 585px;
-        margin-bottom: 615px;
+    .menu-container .nav-bar {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        right: 0;
+        padding-right: 20px;
+        display: none;
     }
 
-    #servicios-web-dev {
-        padding-top: 410px;
-        margin-bottom: 470px;
+    .menu-container .nav-bar ul li {
+        width:100%;
+        display: flex;
+        justify-content: right;
+        padding-bottom: 7px;
     }
 
+    .menu-container .nav-bar ul li a {
+        font-size: 17px;
+        font-weight: bold;
+        padding: 7px 20px;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        width: 20%;
+        border-radius: 5px;
+    }
+
+    #menu:checked ~ .nav-bar {
+        display: initial;
+    }
+
+    .menu-container .nav-bar ul li:hover .submenu {
+        display: block; 
+        position: absolute;
+        padding-right: 120px;
+        background-color: rgb(0, 0, 0);
+        width: 170px;
+        z-index: 1;
+        border-radius: 7px;
+    }
+
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 70%;
+    }
+
+    .botones-servicios {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .botones-servicios img {
+        width: 90px;
+        height: 90px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
+        cursor: pointer;    
+    }
+
+    .Perfil-laboral {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .foto-perfil {
+        padding-left: 20px;
+    }
 
     footer {
         display: block;
