@@ -648,6 +648,104 @@ h1{
     margin: 0;
 }
 
+/*carousel*/
+
+.carousel {
+    display: block;
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;    
+}
+
+.carousel-slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Ocultar inputs */
+input[type="radio"] {
+    display: none;
+    visibility: hidden;
+}
+
+/* Posición de las imágenes dependiendo del input seleccionado */
+input#slide1:checked ~ .carousel-slides {
+    transform: translateX(0%);
+}
+
+input#slide2:checked ~ .carousel-slides {
+    transform: translateX(-100%);
+}
+
+input#slide3:checked ~ .carousel-slides {
+    transform: translateX(-200%);
+}
+
+input#slide4:checked ~ .carousel-slides {
+    transform: translateX(-300%);
+}
+
+/* Controles */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    bottom: 10px;
+    gap: 20px;
+    width: 100%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevenir clics en áreas vacías */
+}
+
+.carousel-controls label {
+    pointer-events: all; /* Habilitar clic solo en los botones */
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    background-color: #ffd11b;
+    border-radius: 5px;
+    opacity: 0.5;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+    transition: 300ms ease-in-out;
+}
+
+.carousel-controls label:hover {
+    scale: 1.2;
+    opacity: 1;
+}
+
+.carousel input:nth-child(1):checked ~ .carousel-controls label:nth-child(1),
+.carousel input:nth-child(2):checked ~ .carousel-controls label:nth-child(2),
+.carousel input:nth-child(3):checked ~ .carousel-controls label:nth-child(3),
+.carousel input:nth-child(4):checked ~ .carousel-controls label:nth-child(4)
+{
+    opacity: 1;
+    scroll-margin: 1.2;
+    width: 40px;
+}
+
+
 .portafolio {
     display: block;
     text-align: center;
@@ -686,7 +784,7 @@ h1{
     grid-template-columns: repeat(
         auto-fit,
         minmax(
-            200px,
+            300px,
             1fr
         )
     );
@@ -701,9 +799,9 @@ h1{
 }
 
 .portafolio-diseno-imagenes img {
-    width: 100%;
+    width: 250px;
     height: auto;
-    max-width: 200px;
+    max-width: 570px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;   
 }
@@ -727,10 +825,32 @@ h1{
     grid-column-end: 4;
 }
 
+.banner-portada-mo {
+    grid-column-start: 1;
+    grid-column-end: 3;  
+}
+
+.banner-portada-mo img {
+    width: 600px;
+}
+
+
 .portafolio-diseno-video {
     grid-column-start: 1;
     grid-column-end: 4;
     justify-items: center;
+}
+
+.portafolio-diseno-video-mo {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    height: auto;
+}
+
+.portafolio-diseno-video-mo video {
+    max-width: 460px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px; 
 }
 
 .portafolio-diseno-imagenes-1 img {
@@ -835,12 +955,17 @@ h1{
 .carousel2 {
     display: block;
     position: relative;
-    width: 580px;
-    height: 330px;
+    width: 520px;
+    height: 320px;
     margin: 0;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel2 p {
+    text-align: right;
+   
 }
 
 .carousel2-slides {
@@ -850,7 +975,7 @@ h1{
 
 .carousel2-slide img {
     width: auto;
-    height: 290PX;
+    height: 260PX;
     display: flex;
 }
 
@@ -913,6 +1038,50 @@ input#slide2-4:checked ~ .carousel2-controls label:nth-child(4) {
     width: 40px;
 }
 
+.imagen-mas-video {
+    display: grid;
+    grid-template-columns: repeat(4fr, 200px) ;
+    grid-template-rows: 3fr;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.portafolio-arte-card-3d-vertical {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.portafolio-arte-card-3d-vertical img {
+    width: auto;
+    height: 350px; 
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;  
+}
+
+
+.portafolio-arte-3d-video {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 390px;
+    justify-content: center;
+}
+
+.portafolio-arte-3d-video video {
+    height: 390px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
+}
+
+
 /*portafolio-multimedia*/
 
 .portafolio-multimedia {
@@ -953,98 +1122,6 @@ input#slide2-4:checked ~ .carousel2-controls label:nth-child(4) {
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-}
-
-/*carousel*/
-
-.carousel {
-    display: block;
-    position: relative;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    width: 80%;
-    height: 80%;
-    margin: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;    
-}
-
-.carousel-slide {
-    width: 100%;
-    flex-shrink: 0;
-}
-
-.carousel-slide img {
-    width: 100%;
-    display: block;
-}
-
-/* Ocultar inputs */
-input[type="radio"] {
-    display: none;
-    visibility: hidden;
-}
-
-/* Posición de las imágenes dependiendo del input seleccionado */
-input#slide1:checked ~ .carousel-slides {
-    transform: translateX(0%);
-}
-
-input#slide2:checked ~ .carousel-slides {
-    transform: translateX(-100%);
-}
-
-input#slide3:checked ~ .carousel-slides {
-    transform: translateX(-200%);
-}
-
-/* Controles */
-.carousel-controls {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    position: absolute;
-    bottom: 10px;
-    gap: 20px;
-    width: 100%;
-    transform: translateY(-50%);
-    pointer-events: none; /* Prevenir clics en áreas vacías */
-}
-
-.carousel-controls label {
-    pointer-events: all; /* Habilitar clic solo en los botones */
-    display: flex;
-    font-size: 2rem;
-    color: white;
-    background-color: #ffd11b;
-    border-radius: 5px;
-    opacity: 0.5;
-    padding: 10px;
-    cursor: pointer;
-    user-select: none;
-    z-index: 1;
-    transition: 300ms ease-in-out;
-}
-
-.carousel-controls label:hover {
-    scale: 1.2;
-    opacity: 1;
-}
-
-.carousel input:nth-child(1):checked ~ .carousel-controls label:nth-child(1),
-.carousel input:nth-child(2):checked ~ .carousel-controls label:nth-child(2),
-.carousel input:nth-child(3):checked ~ .carousel-controls label:nth-child(3)
-{
-    opacity: 1;
-    scroll-margin: 1.2;
-    width: 40px;
 }
 
 
@@ -1222,15 +1299,12 @@ footer p{
         box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;   
     }
     
-    
     .portafolio-arte-2d-3d ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 20px;
     }
-    
-    
     
     .portafolio-arte-card-vertical {
         grid-row-start: 1;
@@ -1261,6 +1335,47 @@ footer p{
         width: 100%;
         height: auto;
         align-content: center;
+    }
+
+    .imagen-mas-video {
+        display: grid;
+        grid-template-columns: 4fr;
+        grid-template-rows: 3fr;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .portafolio-arte-card-3d-vertical {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        width: auto;
+    }
+    
+    .portafolio-arte-card-3d-vertical img {
+        width: auto;
+        height: 250px; 
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;  
+    }
+    
+    
+    .portafolio-arte-3d-video {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 300px;
+        justify-content: center;
+    }
+    
+    .portafolio-arte-3d-video video {
+        height: 300px;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 13px;
+        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
     }
     
     
@@ -1347,6 +1462,70 @@ footer p{
         cursor: pointer;   
     }
 
+    .portafolio-diseno-imagenes-1 {
+        display: grid;
+        grid-template-columns: 4fr;
+        width: 70vw;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .portafolio-diseno-banner-1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        display: flex;
+    }
+    
+    .portafolio-diseno-banner-2 {
+        display: flex;
+        width: 70vw;
+        justify-content: center;
+    }
+    
+    .portafolio-diseno-video {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        justify-items: center;
+        padding-left: 25px;
+    }
+    
+    .portafolio-diseno-imagenes-1 img {
+        height: 130px;
+        width: auto;
+        border-radius: 13px;
+        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
+    }
+    
+    .portafolio-diseno-imagenes-1 video {
+        display: flex;
+        width: 500px;
+        height: auto;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 13px;
+        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
+    }
+
+    .portafolio-diseno-banner-1 img {
+        width: auto;
+        height: 130px;
+        align-items: center;
+    }
+    
+    .portafolio-diseno-banner-2 img {
+        width: auto;
+        height: 150px;
+    }
+
+    .portafolio-diseno-banner {
+        align-content: center;
+        justify-content: center;
+    }
+
     .portafolio-arte-2d-3d {
     display: grid;
     grid-template-columns: 3fr;
@@ -1357,71 +1536,68 @@ footer p{
     width: 60vw;
     height: auto;
     margin: 0;
-}
+    }
 
-.portafolio-arte-2d-3d-imagenes {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    width: 60vw;
-    height: auto;
-    margin: 0;
-    
-}
+    .portafolio-arte-2d-3d-imagenes {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        width: 60vw;
+        height: auto;
+        margin: 0;
+        
+    }
 
-.portafolio-arte-2d-3d-imagenes img {
-    
-    width: 450px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;   
-}
+    .portafolio-arte-2d-3d-imagenes img {
+        
+        width: 450px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;   
+    }
 
+    .portafolio-arte-2d-3d ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
 
-.portafolio-arte-2d-3d ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
-}
+    .portafolio-arte-card-vertical {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
 
+    .portafolio-arte-card-vertical img {
+        width: auto;
+        height: 250px;
+    }
 
+    .carousel2 {
+        display: block;
+        position: relative;
+        width: 450px;
+        height: 270px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        
+    }
 
-.portafolio-arte-card-vertical {
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
+    .portafolio-arte-card-carousel {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        width: 100vw;
+        height: auto;
+        max-width: 650px;
+        margin: 0;
+        padding: 0;
 
-.portafolio-arte-card-vertical img {
-    width: auto;
-    height: 250px;
-}
-
-.carousel2 {
-    display: block;
-    position: relative;
-    width: 450px;
-    height: 270px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
-}
-
-.portafolio-arte-card-carousel {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    width: 100vw;
-    height: auto;
-    max-width: 650px;
-    margin: 0;
-    padding: 0;
-
-}
+    }
 
 
     footer {
@@ -1548,10 +1724,10 @@ footer p{
         grid-template-columns: repeat(
             auto-fit,
         minmax(
-            200px,
+            190px,
             1fr)
         );
-        width: 70vw;
+        width: 100vw;
         justify-content: center;
         justify-items: center;
         align-items: center;
@@ -1560,6 +1736,10 @@ footer p{
 
     .portafolio-diseno-banner-1 {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
     }
     
     .portafolio-diseno-banner-2 {
@@ -1576,7 +1756,7 @@ footer p{
     }
     
     .portafolio-diseno-imagenes-1 img {
-        height: 130px;
+        height: 120px;
         width: auto;
         border-radius: 13px;
         box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
@@ -1594,7 +1774,7 @@ footer p{
 
     .portafolio-diseno-banner-1 img {
         width: auto;
-        height: 130px;
+        height: 120px;
         align-items: center;
     }
     
@@ -1606,6 +1786,8 @@ footer p{
     .portafolio-diseno-banner {
         align-content: center;
     }
+
+
 
     .portafolio-arte-2d-3d {
         display: block;
