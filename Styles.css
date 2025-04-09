@@ -890,6 +890,29 @@ input#slide4:checked ~ .carousel-slides {
     justify-items: center;
 }
 
+.portafolio-diseno-logo-1 {
+    width: 100%;
+}
+
+.portafolio-diseno-logo-2 {
+    width: 100%;
+}
+
+.portafolio-diseno-logo-3 {
+    width: 100%;
+}
+.portafolio-diseno-logo-4 {
+    width: 100%;
+}
+
+.portafolio-diseno-logo-5 {
+    width: 100%;
+}
+
+.portafolio-diseno-logo-6 {
+    width: 100%;
+}
+
 .banner-portada-mo {
     grid-column-start: 1;
     grid-column-end: 3;  
@@ -2152,6 +2175,9 @@ footer p{
         padding-left: 20px;
     }
 
+    /*portafolio-diseno*/
+
+
     .portafolio-diseno {
         display: block;
         grid-template-rows: auto;
@@ -2169,10 +2195,10 @@ footer p{
 
     .portafolio-diseno-imagenes {
         display: grid;
-        grid-template-columns: 170px repeat(
+        grid-template-columns: repeat(
             auto-fit,
             minmax(
-                150px,
+                180px,
                 1fr
             )
         );
@@ -2186,223 +2212,58 @@ footer p{
         gap: 20px;
     }
 
-    .portafolio-diseno-imagenes-1 {
-        display: grid;
-        grid-template-columns: repeat(
-            auto-fit,
-        minmax(
-            170px,
-            1fr)
-        );
-        width: 100vw;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-    }
-
-    .portafolio-diseno-banner {
-        align-content: center;
-    }
-
-    .portafolio-diseno-banner-1 {
-        grid-column-start: 2;
-        grid-column-end: 4;
+    .portafolio-diseno-logo-1 {
+        grid-column-start: 1;
         grid-row-start: 1;
     }
-    
-    .portafolio-diseno-banner-2 {
+
+    .portafolio-diseno-logo-2 {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .portafolio-diseno-logo-3 {
         grid-column-start: 1;
-        grid-column-end: 4;
+        grid-row-start: 2;
+    }
+
+    .portafolio-diseno-logo-4 {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+
+    .portafolio-diseno-logo-5 {
+        grid-row-start: 3;
+        grid-column-start: 1;
+    }
+
+    .portafolio-diseno-logo-6 {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+
+    .banner-portada-mo-1 {
         grid-row-start: 4;
-        grid-row-end: 4;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .portafolio-diseno-banner-3 {
         grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 3;
-        grid-row-start: 3;
+        grid-column-end: 2;
     }
 
-    .portafolio-diseno-banner-4 {
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 4;
-        
+    .banner-portada-mo-2 {
+        grid-row-start: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
     }
 
     .banner-portada-mo {
+        grid-row-start: 5;
         grid-column-start: 1;
-        grid-column-end: 4;
     }
-    
-    .portafolio-diseno-video {
+
+    .portafolio-diseno-video-mo {
+        grid-row-start: 6;
         grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        justify-items: center;
-        
     }
-    
-    .portafolio-diseno-imagenes img{
-        width:  10px;
-        height: auto;
     }
-
-    .portafolio-diseno-imagenes-1 img {
-        height: 120px;
-        width: auto;
-        border-radius: 13px;
-        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
-    }
-    
-    .portafolio-diseno-imagenes-1 video {
-        display: flex;
-        width: 500px;
-        height: auto;
-        margin: 0;
-        overflow: hidden;
-        border-radius: 13px;
-        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
-    }
-
-    .portafolio-diseno-banner-1 img {
-        width: auto;
-        height: 120px;
-        align-items: center;
-    }
-    
-    .portafolio-diseno-banner-2 img {
-        width: auto;
-        height: 140px;
-    }
-
-    .portafolio-diseno-banner-3 img {
-        width: auto;
-        height: 450px;
-    }
-
-    .portafolio-diseno-banner-4 img {
-        width: auto;
-        height: 140px;
-    }
-
-
-    .banner-portada-mo img {
-        width: 420px;
-        height: auto;
-    }
-
-
-
-    .portafolio-arte-2d-3d {
-        display: block;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        width: 60vw;
-        height: auto;
-        margin: 0;
-    }
-    
-    .portafolio-arte-2d-3d-imagenes {
-        display: block;
-        align-items: center;
-        justify-items: center;
-        width: 100vw;
-        height: auto;
-        margin: 0;
-        
-    }
-    
-    .portafolio-arte-2d-3d-imagenes img {
-        
-        width: 390px;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;   
-    }
-    
-    
-    .portafolio-arte-2d-3d ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 20px;
-    }
-    
-    .portafolio-arte-card-vertical {
-        display: block;
-    }
-    
-    .portafolio-arte-card-vertical img {
-        width: auto;
-        height: 300px;
-    }
-    
-    .carousel2 {
-        display: block;
-        justify-content: center;
-        align-items: center;
-        width: 360px;
-        height: 240px;
-        padding: 0;
-        margin: 0;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        
-    }
-    
-    .portafolio-arte-card-carousel {
-        display: block;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        width: 80vw;
-        height: auto;
-        margin: 0;
-        padding: 0;
-    
-    }
-
-    
-
-    footer {
-        display: block;
-        width: 100%;
-        margin: 0;
-        height: auto;
-        justify-content: center; 
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-    }
-
-    .footer-links {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .footer-social-media {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-evenly; 
-        align-content: center;
-        gap: 10px;
-        padding-top: 20px;
-    }
-}
 
 @media(max-width:390px) {
 
@@ -2545,8 +2406,6 @@ footer p{
         border-radius: 13px;
         box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
     }
-
-  
     
     .portafolio-diseno-banner-1 img {
         width: auto;
@@ -2561,6 +2420,20 @@ footer p{
 
     .portafolio-diseno-banner {
         align-content: center;
+    }
+
+    .portafolio-arte-2d-3d-imagenes {
+        display: block;
+        width: 80vw;
+    }
+    .imagen-mas-video{
+        display: block;
+        width: 70vw;
+    }
+
+    .portafolio-arte-3d-video video {
+        width: 360px;
+        height: auto;
     }
 
     footer {
