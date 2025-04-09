@@ -2351,6 +2351,12 @@ footer p{
         padding-left: 20px;
     }
 
+    .portafolio-diseno {
+        display: block;
+    }
+
+    
+
     .portafolio-diseno ul {
         display: flex;
         flex-direction: row;
@@ -2368,19 +2374,37 @@ footer p{
         justify-items: center;
         align-items: center;
         align-content: center;
-        padding-left: 30px;
+        padding-left: 0;
+    }
+
+    .portafolio-diseno-banner {
+        display: block;
+        justify-content: center;
+        padding: 0;
     }
 
     .portafolio-diseno-banner-1 {
-        display: flex;
-        padding: 10px;
+        display: block;
+        justify-content: center;
+        padding: 0;
     }
     
     .portafolio-diseno-banner-2 {
-        display: flex;
-        width: 70px;
+        display: block;
         justify-content: center;
-        padding: 10px;
+        padding: 0;
+    }
+
+    .portafolio-diseno-banner-3 {
+        display: block;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .portafolio-diseno-banner-4 {
+        display: block;
+        justify-content: center;
+        padding: 0;
     }
     
     
@@ -2392,7 +2416,7 @@ footer p{
     }
     
     .portafolio-diseno-imagenes-1 img {
-        height: 200px;
+        height: 100%;
         width: auto;
         border-radius: 13px;
         box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
@@ -2406,10 +2430,16 @@ footer p{
         border-radius: 13px;
         box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
     }
+
+    .portafolio-diseno-banner img {
+        width: auto;
+        height: 180px;
+        align-items: center;
+    }
     
     .portafolio-diseno-banner-1 img {
         width: auto;
-        height: 140px;
+        height: 130px;
         align-items: center;
     }
     
@@ -2418,8 +2448,24 @@ footer p{
         height: 90px;
     }
 
-    .portafolio-diseno-banner {
-        align-content: center;
+    .portafolio-diseno-banner-4 img {
+        width: auto;
+        height: 180px;
+        align-items: center;
+    }
+
+    .portafolio-diseno-video-mo {
+        display: block;
+        align-items: center;
+    }
+
+    .portafolio-diseno-video-mo video {
+        width: 320px;
+    }
+
+
+    .portafolio-arte-2d-3d {
+        display: block;
     }
 
     .portafolio-arte-2d-3d-imagenes {
@@ -2435,6 +2481,8 @@ footer p{
         width: 360px;
         height: auto;
     }
+
+
 
     footer {
         display: block;
