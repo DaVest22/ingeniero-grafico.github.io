@@ -2364,32 +2364,18 @@ footer p{
         display: block;
         width: 80vw;
         height: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
         
     }
-
-    .carousel2 {
-        height: 200px;
-        width: 310px;
-        max-width: 370px;   
-        justify-content: center;  
-        align-items: center;  
-    }
-
-    .carousel2-slides {
-        height: auto;    
-    }
-
-    .carousel2-slide img {
-        width: 310px;
-        justify-content: center;
-    }
-    
 
     .portafolio-diseno ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 80vw;
+        width: 100vw;
     }
 
     .portafolio-diseno ul li img {
@@ -2494,6 +2480,53 @@ footer p{
 
     .portafolio-arte-2d-3d {
         display: block;
+        width: 70vw;
+    }
+
+    
+    .portafolio-arte-card-carousel {
+        width: 90vw;
+        
+    }
+
+    .carousel2 {
+        height: 200px;
+        width: 320px;
+        justify-content: center;  
+        align-items: center;  
+    }
+
+    .carousel2-slides {
+        height: auto;    
+    }
+
+    .carousel2-slide img {
+        width: 320px;
+    }
+    
+
+    .portafolio-arte-2d-3d ul {
+        justify-content: center;
+        width: 60vw;
+    }
+
+    .portafolio-arte-2d-3d ul li {
+        display: flex;
+        width: 45px;
+        height: auto;
+    }
+
+    .portafolio-arte-2d-3d-concept-art {
+        display: block;
+        align-items: center;
+        
+    }
+
+    .portafolio-arte-2d-3d-concept-art img {
+        width: 270px;
+        height: auto;
+        border-radius: 13px;
+        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
     }
 
     .portafolio-arte-2d-3d-imagenes {
@@ -2502,13 +2535,14 @@ footer p{
     }
     .imagen-mas-video{
         display: block;
-        width: 70vw;
+        width: 100vw;
     }
 
     .portafolio-arte-3d-video video {
-        width: 360px;
+        width: 310px;
         height: auto;
     }
+
 
 
 
