@@ -672,9 +672,13 @@ h1{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.carousel p {
+    text-align: center;
+}
+
 .carousel-slides {
     display: flex;
-    transition: transform 0.5s ease-in-out;    
+    transition: transform 0.5s ease-in-out; 
 }
 
 .carousel-slide {
@@ -684,6 +688,7 @@ h1{
 
 .carousel-slide img {
     width: 100%;
+
     display: block;
 }
 
@@ -2355,6 +2360,29 @@ footer p{
         display: block;
     }
 
+    .portafolio-arte-2d-3d-imagenes {
+        display: block;
+        width: 80vw;
+        height: auto;
+        
+    }
+
+    .carousel2 {
+        height: 200px;
+        width: 310px;
+        max-width: 370px;   
+        justify-content: center;  
+        align-items: center;  
+    }
+
+    .carousel2-slides {
+        height: auto;    
+    }
+
+    .carousel2-slide img {
+        width: 310px;
+        justify-content: center;
+    }
     
 
     .portafolio-diseno ul {
