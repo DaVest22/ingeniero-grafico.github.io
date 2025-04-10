@@ -2360,16 +2360,7 @@ footer p{
         display: block;
     }
 
-    .portafolio-arte-2d-3d-imagenes {
-        display: block;
-        width: 80vw;
-        height: auto;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        
-    }
+    
 
     .portafolio-diseno ul {
         display: flex;
@@ -2383,47 +2374,73 @@ footer p{
     }
 
     .portafolio-diseno-imagenes-1 {
-        display: block;
+        display: grid;
+        grid-template-rows: repeat(7fr, 200px);
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(
+                150px,
+                1fr
+            )
+        );
+        gap: 20px;
+        width: auto;
         justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
-        padding-left: 0;
     }
 
     .portafolio-diseno-banner {
-        display: block;
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:3;
+        grid-row-end: 4;
         justify-content: center;
         padding: 0;
     }
 
     .portafolio-diseno-banner-1 {
-        display: block;
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:4;
+        grid-row-end: 5;
         justify-content: center;
         padding: 0;
     }
     
     .portafolio-diseno-banner-2 {
-        display: block;
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:6;
+        grid-row-end:7;
         justify-content: center;
         padding: 0;
     }
 
     .portafolio-diseno-banner-3 {
-        display: block;
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:3;
         justify-content: center;
+        align-content: center;
+        align-items: center;
         padding: 0;
     }
     
     .portafolio-diseno-banner-4 {
-        display: block;
-        justify-content: center;
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:3;
+        grid-row-end: 4;
+        
         padding: 0;
     }
     
     
     .portafolio-diseno-video {
-        display: flex;
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:5;
+        grid-row-end:6;
         justify-items: center;
         align-items: center;
         padding: 10px;
@@ -2447,7 +2464,7 @@ footer p{
 
     .portafolio-diseno-banner img {
         width: auto;
-        height: 180px;
+        height: 150px;
         align-items: center;
     }
     
@@ -2464,7 +2481,7 @@ footer p{
 
     .portafolio-diseno-banner-4 img {
         width: auto;
-        height: 180px;
+        height: 150px;
         align-items: center;
     }
 
@@ -2475,6 +2492,17 @@ footer p{
 
     .portafolio-diseno-video-mo video {
         width: 320px;
+    }
+
+    .portafolio-arte-2d-3d-imagenes {
+        display: block;
+        width: 80vw;
+        height: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        
     }
 
 
@@ -2502,6 +2530,7 @@ footer p{
 
     .carousel2-slide img {
         width: 320px;
+
     }
     
 
