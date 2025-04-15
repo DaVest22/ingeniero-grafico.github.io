@@ -243,6 +243,7 @@ body{
     padding: 0;
 }
 
+
 /*Menu-nav-1*/
 
 .back {
@@ -374,6 +375,22 @@ h1{
     font-size: 22px;
     text-align: center;
     padding: 25px;
+}
+
+.contratar-servicios {
+    justify-content: center;
+    font-size: large;
+    color: #fff;
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 6px;
+}
+
+.contratar-servicios img {
+    justify-content: center;
+    align-items: center;
+
 }
 
 .Perfil-laboral {
@@ -771,6 +788,38 @@ input#slide4:checked ~ .carousel-slides {
     margin: 0;
 }
 
+.portafolio-diseno h2 {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    padding: 25px;
+    color: #F29F05;
+}
+
+.portafolio-arte-2d-3d h2 {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    padding: 25px;
+    color: #F25C05;
+}
+
+.portafolio-multimedia h2 {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    padding: 25px;
+    color: #0ec2c2;
+}
+
+.portafolio-web h2 {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    padding: 25px;
+    color:#18c0d4;
+}
+
 .portafolio-diseno {
     display: block;
     grid-template-rows: auto;
@@ -1017,7 +1066,6 @@ input#slide4:checked ~ .carousel-slides {
     box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;   
 }
 
-
 .portafolio-arte-2d-3d ul {
     display: flex;
     flex-direction: row;
@@ -1025,7 +1073,19 @@ input#slide4:checked ~ .carousel-slides {
     gap: 20px;
 }
 
+.portafolio-arte-2d-3d-concept-art {
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    align-items: center;
+    gap: 20px;
+}
 
+.portafolio-arte-2d-3d-concept-art img {
+    width: 320px;
+    height: auto;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
+}
 
 .portafolio-arte-card-vertical {
     grid-row-start: 1;
@@ -1050,7 +1110,7 @@ input#slide4:checked ~ .carousel-slides {
 .carousel2 {
     display: block;
     position: relative;
-    width: 520px;
+    width: 480px;
     height: 520px;
     margin: 0;
     overflow: hidden;
@@ -1059,7 +1119,7 @@ input#slide4:checked ~ .carousel-slides {
 
 .carousel2 p {
     display: flex;
-    text-align: right;
+    text-align: center;
 }
 
 .carousel2-slides {
@@ -1068,7 +1128,7 @@ input#slide4:checked ~ .carousel-slides {
 }
 
 .carousel2-slide img {
-    height: 100%;
+    width: 100%;
     display: flex;
 }
 
@@ -1076,8 +1136,6 @@ input#slide4:checked ~ .carousel-slides {
     width: 100%;
     flex-shrink: 0;
 }
-
-
 
 input[type="radio"][name="carousel2"] {
     display: none;
@@ -1210,6 +1268,18 @@ input#slide2-8:checked ~ .carousel2-controls label:nth-child(8) {
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+}
+
+.portafolio-multimedia-1 {
+    display: block;
+    width: 70vw;
+    justify-items: center;
+}
+
+.portafolio-multimedia-1 img {
+    width: 80vw;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;  
 }
 
 /*portafolio-web*/
@@ -1511,7 +1581,6 @@ footer p{
         grid-column-start:3;
         grid-column-end: 5;
     }
-   
 
     .portafolio-diseno-video-mo {
         grid-row-start: 4;
@@ -1537,7 +1606,7 @@ footer p{
     }
 
     .banner-portada-mo img {
-        width: 80%px;
+        width: 100%;
     }
 
     .portafolio-diseno-imagenes video {
@@ -1590,6 +1659,20 @@ footer p{
         height: 60%;
     }
 
+    .portafolio-arte-2d-3d-concept-art {
+        display: grid;
+        grid-template-columns: 330px 330px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .portafolio-arte-2d-3d-concept-art img {
+        width: 320px;
+        height: auto;
+        border-radius: 13px;
+        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
+    }
+
     .portafolio-arte-2d-3d {
         display: grid;
         grid-template-columns: 4fr;
@@ -1604,12 +1687,12 @@ footer p{
     }
     
     .portafolio-arte-2d-3d-imagenes {
-        display: flex;
+        display: -moz-grid-line;
         align-items: center;
         align-content: center;
         justify-content: center;
         justify-items: center;
-        width: 70vw;
+        width: 100%;
         height: auto;
         margin: 0;
         gap: 20px;
@@ -1639,15 +1722,6 @@ footer p{
         height: 250px;
     }
     
-    .carousel2 {
-        display: block;
-        position: relative;
-        width: 545px;
-        height: 320px;
-        margin: 0;
-        overflow: hidden;
-    }
-    
     .portafolio-arte-card-carousel {
         grid-row-start: 1;
         grid-row-end: 3;
@@ -1657,6 +1731,32 @@ footer p{
         height: auto;
         align-content: center;
     }
+
+    .carousel2 {
+        display: block;
+        position: relative;
+        width: 350px;
+        height: 390px;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .carousel2-slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel2-slide {
+        width: 100%;
+        flex-shrink: 0;
+    }
+    
+    .carousel2-slide img {
+        height: 350px;
+        width: auto;
+        display: flex;
+    }
+
 
     .imagen-mas-video {
         display: grid;
@@ -1680,7 +1780,6 @@ footer p{
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;  
     }
-    
     
     .portafolio-arte-3d-video {
         grid-column-start: 2;
@@ -1830,26 +1929,6 @@ footer p{
         gap: 20px;
     }
 
-    .portafolio-diseno-imagenes-1 {
-        display: grid;
-        grid-template-rows: 4fr;
-        grid-template-columns: repeat(
-            auto-fit,
-            minmax(
-                180px,
-                1fr
-            )
-        );
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        justify-items: center;
-        width: 70%;
-        height: auto;
-        margin: 0;
-        gap: 20px;
-    }
-    
     .portafolio-diseno-banner {
         grid-column-start: 1;
         grid-column-end: 2;
@@ -1890,6 +1969,26 @@ footer p{
         justify-content: center;
         justify-items: center;
     }
+
+    .portafolio-diseno-imagenes-1 {
+        display: grid;
+        grid-template-rows: 4fr;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(
+                200px,
+                1fr
+            )
+        );
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        width: 70%;
+        height: auto;
+        margin: 0;
+        gap: 20px;
+    }
     
     .portafolio-diseno-video {
         grid-column-start: 2;
@@ -1897,6 +1996,10 @@ footer p{
         grid-row-start: 2;
         grid-row-end: 2;
         justify-items: center;
+    }
+
+    .portafolio-diseno-video video {
+        width: 450px;
     }
 
     .banner-portada-mo {
@@ -1936,7 +2039,7 @@ footer p{
     }
     
     .portafolio-diseno-video-mo video {
-        max-width: 430px;
+        max-width: 520px;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px; 
     }
@@ -1955,7 +2058,7 @@ footer p{
     
     .portafolio-diseno-imagenes-1 video {
         display: flex;
-        width: 400px;
+        width: 370px;
         height: auto;
         margin: 0;
         overflow: hidden;
@@ -1963,9 +2066,9 @@ footer p{
         box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
     }
 
-    .portafolio-diseno-banner {
-        width: auto;
-        height: 100%;
+    .portafolio-diseno-banner img {
+        width: 130px;
+        height: auto;
         align-items: center;
     }
 
@@ -1977,11 +2080,17 @@ footer p{
     
     .portafolio-diseno-banner-2 img {
         width: auto;
-        height: 130px;
+        height: 100px;
     }
 
     .portafolio-diseno-banner-3 img {
-        height: 230px;
+        height: 220px;
+    }
+
+    .portafolio-diseno-banner-4 img {
+        width: 130px;
+        height: auto;
+        align-items: center;
     }
 
     .banner-portada-mo img {
@@ -1999,26 +2108,29 @@ footer p{
     }
 
     .banner-portada-mo img {
-        width: 80%px;
+        width: auto;
+        height: 105px;
     }
 
+
+
+
     .portafolio-arte-2d-3d {
-    display: grid;
-    grid-template-columns: 3fr;
+    display: block;
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
-    width: 60vw;
+    width: 70vw;
     height: auto;
     margin: 0;
     }
 
     .portafolio-arte-2d-3d-imagenes {
-        display: flex;
+        display: grid;
         align-items: center;
         justify-items: center;
-        width: 60vw;
+        width: 80vw;
         height: auto;
         margin: 0;
         
@@ -2026,10 +2138,24 @@ footer p{
 
     .portafolio-arte-2d-3d-imagenes img {
         
-        width: 450px;
+        width: 420px;
         height: auto;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;   
+    }
+
+    .portafolio-arte-2d-3d-concept-art {
+        display: grid;
+        grid-template-columns: 270px 270px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .portafolio-arte-2d-3d-concept-art img {
+        width: 270px;
+        height: auto;
+        border-radius: 13px;
+        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
     }
 
     .portafolio-arte-2d-3d ul {
@@ -2039,40 +2165,70 @@ footer p{
         gap: 20px;
     }
 
-    .portafolio-arte-card-vertical {
-        grid-row-start: 1;
-        grid-row-end: 3;
+    .imagen-mas-video {
+        grid-template-rows: repeat(3fr, 150px);
+        display: grid;  
+        width: 80vw;       
+    }
+
+    .portafolio-arte-card-3d-vertical img {
+        width: auto;
+        height: 160px;
+    }
+
+    .portafolio-arte-3d-video video {
+        width: 420px;
+        height: auto;
     }
 
     .portafolio-arte-card-vertical img {
         width: auto;
-        height: 250px;
+        height: 320px;
+    }
+    
+    .portafolio-arte-card-carousel {
+        display: block;
+        width: 60vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
     }
 
     .carousel2 {
-        display: block;
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end:42;
         position: relative;
-        width: 450px;
-        height: 270px;
+        width: 320px;
+        height: 360px;
         margin: 0;
-        padding: 0;
         overflow: hidden;
         border-radius: 10px;
-        
-        
     }
 
-    .portafolio-arte-card-carousel {
-        grid-row-start: 1;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        width: 100vw;
-        height: auto;
-        max-width: 650px;
-        margin: 0;
-        padding: 0;
+    .carousel2 p {
+        display: block;
+        text-align: center;
+    }
+    
+    .carousel2-slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
 
+    .carousel2-slide {
+        width: 100%;
+        flex-shrink: 0;
+    }
+    
+    .carousel2-slide img {
+        height: 320px;
+        width: auto;
+        display: flex;
     }
 
 
@@ -2139,7 +2295,7 @@ footer p{
         background-color: #000;
         color: #fff;
         display: flex;
-        width: 20%;
+        width: 30%;
         border-radius: 5px;
     }
 
@@ -2213,8 +2369,9 @@ footer p{
         
     }
 
-    .portafolio-diseno-imagenes {
+    .portafolio-diseno-imagenes-1 {
         display: grid;
+        grid-template-rows: 5fr;
         grid-template-columns: repeat(
             auto-fit,
             minmax(
@@ -2230,6 +2387,117 @@ footer p{
         height: auto;
         margin: 0;
         gap: 20px;
+    } 
+
+    .portafolio-diseno-banner {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .portafolio-diseno-banner img {
+        width: 120px;
+        height: auto;
+    }
+
+    .portafolio-diseno-banner-1 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .portafolio-diseno-banner-1 img {
+        width: 230px;
+        height: auto;
+    }
+    
+    .portafolio-diseno-banner-2 {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .portafolio-diseno-banner-2 img {
+        width: 420px;
+        height: auto;
+    }
+
+    .portafolio-diseno-banner-3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .portafolio-diseno-banner-3 img{
+        width: 230px;
+        height: auto;
+    }
+        
+    .portafolio-diseno-banner-4 {
+        grid-column-start:3;
+        grid-column-end:4;
+        grid-row-start:1;
+        grid-row-end: 2;
+        padding: 0;
+    }
+    
+    .portafolio-diseno-video {
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:3;
+        grid-row-end:4;
+        justify-items: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .portafolio-diseno-video video {
+        width: 420px;
+    }
+    
+    .portafolio-diseno-imagenes {
+        display: grid;
+        grid-template-columns: repeat(
+            auto-fit,
+            minmax(
+                200px,
+                1fr
+            )
+        );
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        width: 70%;
+        height: auto;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .portafolio-diseno-imagenes img {
+        width: 180px;
+        height: auto;
     }
 
     .portafolio-diseno-logo-1 {
@@ -2279,11 +2547,148 @@ footer p{
         grid-column-start: 1;
     }
 
+    .banner-portada-mo img {
+        width: 390px;
+    }
+
     .portafolio-diseno-video-mo {
         grid-row-start: 6;
         grid-column-start: 1;
+        justify-content: center;
+        align-items: center;
     }
+
+    .portafolio-diseno-video-mo video {
+        width: 390px;
     }
+
+    /*portafolio-arte-2d-3d*/
+
+    .portafolio-arte-2d-3d {
+        display: block;
+        width: 80vw;
+    }
+
+    .portafolio-arte-2d-3d-imagenes {
+        display: block;
+        width: 100vw;
+        height: auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .portafolio-arte-2d-3d ul {
+        justify-content: center;
+        width: 60vw;
+    }
+
+    .portafolio-arte-2d-3d ul li {
+        display: flex;
+        width: 45px;
+        height: auto;
+    }
+
+    .portafolio-arte-2d-3d-concept-art {
+        display: block;
+        align-items: center;
+        
+    }
+
+    .portafolio-arte-2d-3d-concept-art img {
+        width: 270px;
+        height: auto;
+        border-radius: 13px;
+        box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
+    }
+
+    .portafolio-arte-card-carousel {
+        width: 70vw;  
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .carousel2 {
+        display: block;
+        position: relative;
+        width: 320px;
+        height: 320px;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    
+    .carousel2 p {
+        display: flex;
+        text-align: center;
+    }
+    
+    .carousel2-slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel2-slide {
+        width: 100%;
+        flex-shrink: 0;
+    }
+    
+    .carousel2-slide img {
+        height: 320px;
+        width: 320px;
+        display: flex;
+    }
+    
+    .imagen-mas-video {
+        grid-template-rows: repeat(3fr, 150px);
+        display: grid;  
+        width: 80vw;       
+    }
+
+    .portafolio-arte-card-3d-vertical img {
+        width: auto;
+        height: 160px;
+    }
+
+    .portafolio-arte-3d-video video {
+        width: 320px;
+        height: auto;
+    }
+
+    footer {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: auto;
+        justify-content: center; 
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-social-media {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly; 
+        align-content: center;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+}
 
 @media(max-width:390px) {
 
@@ -2371,12 +2776,12 @@ footer p{
         padding-left: 20px;
     }
 
+
+
     .portafolio-diseno {
         display: block;
     }
-
     
-
     .portafolio-diseno ul {
         display: flex;
         flex-direction: row;
@@ -2450,7 +2855,6 @@ footer p{
         padding: 0;
     }
     
-    
     .portafolio-diseno-video {
         grid-column-start:1;
         grid-column-end:3;
@@ -2500,6 +2904,17 @@ footer p{
         align-items: center;
     }
 
+
+
+    .portafolio-diseno-imagenes img {
+        height: auto;
+        width: 150px;
+    }
+
+    .banner-portada-mo img {
+        width: 320px;
+    }
+
     .portafolio-diseno-video-mo {
         display: block;
         align-items: center;
@@ -2507,6 +2922,13 @@ footer p{
 
     .portafolio-diseno-video-mo video {
         width: 320px;
+    }
+
+
+
+    .portafolio-arte-2d-3d {
+        display: block;
+        width: 70vw;
     }
 
     .portafolio-arte-2d-3d-imagenes {
@@ -2520,16 +2942,9 @@ footer p{
         
     }
 
-
-    .portafolio-arte-2d-3d {
-        display: block;
-        width: 70vw;
-    }
-
     
     .portafolio-arte-card-carousel {
-        width: 85vw;
-        
+        width: 85vw;  
     }
 
     .carousel2 {
@@ -2562,7 +2977,6 @@ footer p{
         width: 100%;
         flex-shrink: 0;
     }
-    
 
     .portafolio-arte-2d-3d ul {
         justify-content: center;
@@ -2592,6 +3006,7 @@ footer p{
         display: block;
         width: 80vw;
     }
+
     .imagen-mas-video{
         display: block;
         width: 100vw;
@@ -2601,8 +3016,6 @@ footer p{
         width: 310px;
         height: auto;
     }
-
-
 
 
     footer {
