@@ -700,6 +700,7 @@ h1{
 
 .carousel-slides {
     display: flex;
+    border-radius: 10px;
     transition: transform 0.5s ease-in-out; 
 }
 
