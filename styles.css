@@ -425,11 +425,9 @@ h1{
 }
 
 .trayectoria {
-    justify-content: center;
-    align-content: center;
+    text-align: center;
     width: 3fr;
-    padding-left: 30px;
-    padding-right: 20px;
+    
 }
 
 .trayectoria h3{
