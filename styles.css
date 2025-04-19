@@ -243,6 +243,11 @@ body{
     padding: 0;
 }
 
+.container p {
+    text-align: center;
+    max-width: 80vw;
+}
+
 
 /*Menu-nav-1*/
 
