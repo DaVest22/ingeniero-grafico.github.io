@@ -432,6 +432,10 @@ h1{
     padding-right: 20px;
 }
 
+.trayectoria p {
+    text-align: left;
+}
+
 .trayectoria h3{
     padding: 10px 0px;
 }
