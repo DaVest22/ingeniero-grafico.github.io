@@ -710,8 +710,9 @@ h1{
 
 .carousel-slide img {
     width: 100%;
-
     display: block;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px; 
 }
 
 /* Ocultar inputs */
