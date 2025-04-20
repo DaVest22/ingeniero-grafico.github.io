@@ -246,6 +246,7 @@ body{
 .container p {
     text-align: center;
     max-width: 80vw;
+    font-weight: lighter;
 }
 
 
@@ -444,7 +445,9 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
     justify-content: center;
+    justify-items: center;
     width: 100%;
     padding-bottom: 20px;
 }
@@ -471,25 +474,51 @@ h1{
             1fr
         )
     );
-    align-items: center;
+    justify-items: center;
     align-content: center;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 70%;
     margin: 0;
     padding: 30px 30px;
     gap: 20px;
 }
 
+.nombres-clientes details {
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+
+}
+
 .nombres-clientes summary {
     text-align: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     list-style: square;
     cursor: pointer;
     font-weight: bold;
 }
 
+
 .nombres-clientes summary:hover {
     color: #07B2D9;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombres-clientes p {
+    font-weight: normal;
 }
 
 .servicios {
