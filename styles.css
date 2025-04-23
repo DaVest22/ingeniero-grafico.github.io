@@ -1155,6 +1155,7 @@ input#slide4:checked ~ .carousel-slides {
     width: 100%;
     height: auto;
     align-content: center;
+    text-align: center;
 }
 
 .carousel2 {
@@ -1167,9 +1168,9 @@ input#slide4:checked ~ .carousel-slides {
     border-radius: 10px;
 }
 
-.carousel2 p {
-    display: flex;
-    text-align: center;
+.portafolio-arte-card-carousel p {
+    text-align: left;
+    justify-content: center;
 }
 
 .carousel2-slides {
