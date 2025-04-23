@@ -2666,7 +2666,7 @@ footer p{
         display: block;
         position: relative;
         width: 320px;
-        height: 320px;
+        height: 360px;
         margin: 0;
         overflow: hidden;
         border-radius: 10px;
@@ -3002,7 +3002,7 @@ footer p{
         display: block;
         position: relative;
         width: 320px;
-        height: 320px;
+        height: 360px;
         margin: 0;
         overflow: hidden;
         border-radius: 10px;
@@ -3028,6 +3028,10 @@ footer p{
         width: 100%;
         flex-shrink: 0;
     }
+
+    .carousel2-controls {
+        
+    } 
 
     .portafolio-arte-2d-3d ul {
         justify-content: center;
