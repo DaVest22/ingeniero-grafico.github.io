@@ -1460,15 +1460,6 @@ footer p{
         width: 77%;
     }
 
-    .servicios {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);  
-        grid-column: 90px;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }    
-
     .Perfil-laboral {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -3096,6 +3087,7 @@ footer p{
         padding-top: 20px;
     }
 }
+
 
 
 
