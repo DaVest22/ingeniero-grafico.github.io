@@ -1478,12 +1478,24 @@ footer p{
         align-content: center;
     }
 
+    .pagina-servicios {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    }
+    
     .pagina-servicios p {
     font-weight: normal;
     }
 
     .categoria-servicios {
-        display: block;
+        display: flex;
         justify-content: center;
         justify-items: center;
         align-items: center;
@@ -3087,6 +3099,7 @@ footer p{
         padding-top: 20px;
     }
 }
+
 
 
 
