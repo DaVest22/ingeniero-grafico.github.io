@@ -597,7 +597,7 @@ h1{
 }
 
 .categoria-servicios {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4fr, 200px);
     grid-row: 1fr 1fr 1fr 1fr;
     align-items: center;
@@ -3100,6 +3100,7 @@ footer p{
         padding-top: 20px;
     }
 }
+
 
 
 
