@@ -1479,7 +1479,7 @@ footer p{
     }
 
     .pagina-servicios {
-        display: flex;
+        display: block;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -3099,6 +3099,7 @@ footer p{
         padding-top: 20px;
     }
 }
+
 
 
 
