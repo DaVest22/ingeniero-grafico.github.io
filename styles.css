@@ -576,8 +576,7 @@ h1{
 
 
 .pagina-servicios {
-    display: flex;
-    flex-direction: column;
+    display: block;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -3100,6 +3099,7 @@ footer p{
         padding-top: 20px;
     }
 }
+
 
 
 
