@@ -591,8 +591,7 @@ h1{
 }
 
 .categoria-servicios {
-    display: flex;
-    flex-direction: column;
+    display: block;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -3099,6 +3098,7 @@ footer p{
         padding-top: 20px;
     }
 }
+
 
 
 
