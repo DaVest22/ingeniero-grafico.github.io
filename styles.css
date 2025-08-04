@@ -1479,15 +1479,15 @@ footer p{
     }
 
     .pagina-servicios {
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: auto;
     }
     
     .pagina-servicios p {
@@ -3099,6 +3099,7 @@ footer p{
         padding-top: 20px;
     }
 }
+
 
 
 
