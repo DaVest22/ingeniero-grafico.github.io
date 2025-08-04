@@ -384,7 +384,7 @@ h1{
 }
 
 .contratar-servicios {
-    justify-content: center;
+    display: flex;
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -495,9 +495,7 @@ h1{
     align-content: center;
     justify-content: center;
     align-items: center;
-    
     cursor: pointer;
-
 }
 
 .nombres-clientes summary {
@@ -3102,5 +3100,6 @@ footer p{
         padding-top: 20px;
     }
 }
+
 
 
