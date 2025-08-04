@@ -1492,7 +1492,7 @@ footer p{
     }
 
     .categoria-servicios {
-        display: flex;
+        display: block;
         justify-content: center;
         justify-items: center;
         align-items: center;
@@ -3096,6 +3096,7 @@ footer p{
         padding-top: 20px;
     }
 }
+
 
 
 
