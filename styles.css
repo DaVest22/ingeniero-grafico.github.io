@@ -385,6 +385,7 @@ h1{
 
 .contratar-servicios {
     justify-content: center;
+    align-items: center;
     font-size: large;
     color: #fff;
     background-color: green;
@@ -3099,3 +3100,4 @@ footer p{
         padding-top: 20px;
     }
 }
+
