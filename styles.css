@@ -1507,7 +1507,7 @@ footer p{
 
     .tarjetas-servicios {
     display: grid;
-    grid-template-columns: repeat(4fr, 200px);
+    grid-template-columns: repeat(4fr, 180px);
     grid-row: 1fr 1fr 1fr 1fr;
     align-items: center;
     align-content: center;
@@ -3098,6 +3098,7 @@ footer p{
         padding-top: 20px;
     }
 }
+
 
 
 
