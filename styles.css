@@ -594,17 +594,14 @@ h1{
 }
 
 .categoria-servicios {
-    display: grid;
-    grid-template-columns: repeat(4fr, 200px);
-    grid-row: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
     align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 30px;
-    width: 70vw;
+    width: 100vw;
     height: auto;
+    margin: 0;
     /*background-color: #fe790f;*/
 }
 
@@ -659,13 +656,16 @@ h1{
 
 .tarjetas-servicios {
     display: grid;
-    justify-content: center;
-    justify-items: center;
+    grid-template-columns: repeat(4fr, 200px);
+    grid-row: 1fr 1fr 1fr 1fr;
     align-items: center;
     align-content: center;
-    width: 100vw;
-    height: auto;
+    justify-content: center;
+    align-items: center;
     margin: 0;
+    padding: 30px;
+    width: 70vw;
+    height: auto;
 }
 
 .icono-servicio img {
@@ -3096,6 +3096,7 @@ footer p{
         padding-top: 20px;
     }
 }
+
 
 
 
