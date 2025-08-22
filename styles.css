@@ -384,7 +384,10 @@ h1{
 }
 
 .contratar-servicios {
-    justify-content: center;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
     font-size: large;
     color: #fff;
     background-color: green;
@@ -396,7 +399,6 @@ h1{
 .contratar-servicios img {
     justify-content: center;
     align-items: center;
-
 }
 
 .Perfil-laboral {
@@ -492,9 +494,7 @@ h1{
     align-content: center;
     justify-content: center;
     align-items: center;
-    
     cursor: pointer;
-
 }
 
 .nombres-clientes summary {
@@ -508,7 +508,6 @@ h1{
     font-weight: bold;
 }
 
-
 .nombres-clientes summary:hover {
     color: #07B2D9;
     text-align: center;
@@ -521,7 +520,6 @@ h1{
 .nombres-clientes p {
     font-weight: normal;
 }
-
 
 .servicios {
     display: grid;
@@ -577,10 +575,8 @@ h1{
 }
 
 
-
 .pagina-servicios {
     display: block;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -588,7 +584,6 @@ h1{
     padding: 0;
     width: 100vw;
     height: auto;
-    
 }
 
 .pagina-servicios p {
@@ -596,18 +591,14 @@ h1{
 }
 
 .categoria-servicios {
-    display: grid;
-    grid-template-columns: repeat(4fr, 200px);
-    grid-row: 1fr 1fr 1fr 1fr;
+    display: block;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
     align-content: center;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 30px;
-    width: 70vw;
-    
+    width: 100vw;
     height: auto;
+    margin: 0;
     /*background-color: #fe790f;*/
 }
 
@@ -662,13 +653,16 @@ h1{
 
 .tarjetas-servicios {
     display: grid;
-    justify-content: center;
-    justify-items: center;
+    grid-template-columns: repeat(4fr, 200px);
+    grid-row: 1fr 1fr 1fr 1fr;
     align-items: center;
     align-content: center;
-    width: 100vw;
-    height: auto;
+    justify-content: center;
+    justify-items: center;
     margin: 0;
+    padding: 30px;
+    width: 70vw;
+    height: auto;
 }
 
 .icono-servicio img {
@@ -1067,8 +1061,7 @@ input#slide4:checked ~ .carousel-slides {
 
 .portafolio-diseno-banner-2 img {
     width: 580px;
-    height: auto;
-    
+    height: auto; 
 }
 
 .portafolio-diseno-banner-3 img {
@@ -1281,7 +1274,6 @@ input#slide2-8:checked ~ .carousel2-controls label:nth-child(8) {
     box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;  
 }
 
-
 .portafolio-arte-3d-video {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -1298,7 +1290,6 @@ input#slide2-8:checked ~ .carousel2-controls label:nth-child(8) {
     border-radius: 13px;
     box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
 }
-
 
 /*portafolio-multimedia*/
 
@@ -1353,8 +1344,6 @@ input#slide2-8:checked ~ .carousel2-controls label:nth-child(8) {
     justify-content: space-between;
     gap: 20px;
 }
-
-
 
 footer{
     display: grid;
@@ -1470,15 +1459,6 @@ footer p{
         width: 77%;
     }
 
-    .servicios {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);  
-        grid-column: 90px;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }    
-
     .Perfil-laboral {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -1496,6 +1476,49 @@ footer p{
         align-items: center;
         align-content: center;
     }
+
+    .pagina-servicios {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: auto;
+    }
+    
+    .pagina-servicios p {
+    font-weight: normal;
+    }
+
+    .categoria-servicios {
+        display: block;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        /*background-color: #fe790f;*/
+    }
+
+    .tarjetas-servicios {
+    display: grid;
+    grid-template-columns: repeat(4fr, 250px);
+    grid-row: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 30px;
+    width: 70vw;
+    height: auto;
+    }
+    
 
     .portafolio {
         display: block;
@@ -1520,7 +1543,6 @@ footer p{
         width: 80vw;
         height: auto;
         margin: 0;
-        
     }
 
     .portafolio-diseno-imagenes {
@@ -1703,7 +1725,6 @@ footer p{
     .portafolio-diseno-banner-2 img {
         width: 95%;
         height: auto;
-        
     }
     
     .portafolio-diseno-banner-3 img {
@@ -1848,8 +1869,6 @@ footer p{
         border-radius: 13px;
         box-shadow: rgba(0, 0, 0, 0.3) 3px 3px 9px;
     }
-    
-    
 }
 
 @media (max-width:777px) {
@@ -1957,7 +1976,6 @@ footer p{
         width: 70vw;
         height: auto;
         margin: 0;
-        
     }
 
     .portafolio-diseno-imagenes {
@@ -2163,9 +2181,6 @@ footer p{
         height: 105px;
     }
 
-
-
-
     .portafolio-arte-2d-3d {
     display: block;
     justify-content: center;
@@ -2183,12 +2198,10 @@ footer p{
         justify-items: center;
         width: 80vw;
         height: auto;
-        margin: 0;
-        
+        margin: 0; 
     }
 
     .portafolio-arte-2d-3d-imagenes img {
-        
         width: 420px;
         height: auto;
         border-radius: 10px;
@@ -2312,8 +2325,6 @@ footer p{
         gap: 10px;
         padding-top: 20px;
     }
-
-
 }
 
 @media(max-width:577px) {
@@ -2416,8 +2427,7 @@ footer p{
         align-content: center;
         width: 70vw;
         height: auto;
-        margin: 0;
-        
+        margin: 0; 
     }
 
     .portafolio-diseno-imagenes-1 {
@@ -2643,8 +2653,7 @@ footer p{
 
     .portafolio-arte-2d-3d-concept-art {
         display: block;
-        align-items: center;
-        
+        align-items: center;  
     }
 
     .portafolio-arte-2d-3d-concept-art img {
@@ -2827,8 +2836,6 @@ footer p{
         padding-left: 20px;
     }
 
-
-
     .portafolio-diseno {
         display: block;
     }
@@ -2955,8 +2962,6 @@ footer p{
         align-items: center;
     }
 
-
-
     .portafolio-diseno-imagenes img {
         height: auto;
         width: 150px;
@@ -2975,8 +2980,6 @@ footer p{
         width: 320px;
     }
 
-
-
     .portafolio-arte-2d-3d {
         display: block;
         width: 70vw;
@@ -2990,10 +2993,8 @@ footer p{
         justify-items: center;
         align-items: center;
         align-content: center;
-        
     }
 
-    
     .portafolio-arte-card-carousel {
         width: 85vw;  
     }
@@ -3043,7 +3044,6 @@ footer p{
     .portafolio-arte-2d-3d-concept-art {
         display: block;
         align-items: center;
-        
     }
 
     .portafolio-arte-2d-3d-concept-art img {
@@ -3067,7 +3067,6 @@ footer p{
         width: 310px;
         height: auto;
     }
-
 
     footer {
         display: block;
